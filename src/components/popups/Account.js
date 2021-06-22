@@ -2,11 +2,12 @@ import React from "react";
 
 import PopUp from "./components/PopUp";
 import "./popups.css";
-const ConnectWallet = (props) => {
+
+const Account = (props) => {
   return (
     <div className={props.className}>
-      <PopUp>connect wallet</PopUp>
+      <PopUp>account</PopUp>
     </div>
   );
 };
-export default ConnectWallet;
+export default Account;
