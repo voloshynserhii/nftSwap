@@ -1,0 +1,17 @@
+.connect-wallet {
+    height: 8vh;
+    box-sizing: border-box;
+    border-radius: 39px;
+    padding: 25px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+.border-purple {
+    border: 4px solid var(--border-color);
+}
+.user {
+    border-radius: 50%;
+    width: 8vh;
+    height: 8vh;
+    box-sizing: border-box;
+}

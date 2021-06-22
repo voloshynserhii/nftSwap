@@ -1,0 +1,37 @@
+header {
+    background-color: var(--accent-color);
+    height: 10vh;
+    width: 100vw;
+    padding: 0 10% 0 5%;
+    box-sizing: border-box;
+}
+.header-right {
+    width: 28%;
+}
+.sidebar {
+    background: #322B4C;
+    padding: 100px 5%;
+    height: 85vh;
+    box-sizing: border-box;
+}
+.sidebar-link {
+    width: 100%;
+    height: auto;
+    color: #FFFFFF;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10% 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.sidebar-link img {
+    height: 45px;
+    margin-right: 15px;
+}
+footer {
+    height: 5vh;
+    width: 100vw;
+    background-color: var(--accent-color);
+}
