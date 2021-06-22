@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Logo, HeaderButton, User } from "./UI";
-import './main.css';
+import ConnectWallet from "./popups/ConnectWallet";
+import "./main.css";
 
 const Header = () => {
+  const [wallet, setWallet] = useState(false);
+
+  const showWalletHandler = () => {
+    setWallet((prev) => !prev);
+  };
+
   return (
     <header className="flex-between">
       <Logo />
-      <div className="header-right flex-between">
-        <HeaderButton />
+      <div className="flex-between">
+        <HeaderButton showWallet={showWalletHandler} />
         <User />
       </div>
+      {wallet && <ConnectWallet className="wallet"/>}
     </header>
   );
 };

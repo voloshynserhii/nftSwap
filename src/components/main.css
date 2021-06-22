@@ -5,9 +5,6 @@ header {
     padding: 0 10% 0 5%;
     box-sizing: border-box;
 }
-.header-right {
-    width: 28%;
-}
 .sidebar {
     background: #322B4C;
     padding: 100px 5%;

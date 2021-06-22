@@ -8,10 +8,15 @@
 }
 .border-purple {
     border: 4px solid var(--border-color);
+    cursor: pointer;
 }
 .user {
     border-radius: 50%;
     width: 8vh;
     height: 8vh;
     box-sizing: border-box;
+    margin-left: 20px;
+}
+.user img {
+    width: 50%;
 }

@@ -1,0 +1,6 @@
+.popup {
+    background-color: var(--popup-bg-color);
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 34px;
+}
