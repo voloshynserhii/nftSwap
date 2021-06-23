@@ -8,6 +8,7 @@ import CreateIcon from '../assets/icons/create.svg';
 import CalendarIcon from '../assets/icons/calendar.svg';
 import WithdrawIcon from '../assets/icons/withdraw.svg';
 import DislaimerIcon from '../assets/icons/disclaimer.svg';
+import SwitchBlock from './SwitchBlock';
 
 import './main.css';
 
@@ -21,6 +22,7 @@ const Sidebar = () => {
             <MainMenuButton image={CalendarIcon} path="/calendar">CALENDAR</MainMenuButton>
             <MainMenuButton image={WithdrawIcon} path="/withdraw">WITHDRAW</MainMenuButton>
             <MainMenuButton image={DislaimerIcon} path="/disclaimer">DISCLAIMER</MainMenuButton>
+            <SwitchBlock />
         </div>
     );
 };

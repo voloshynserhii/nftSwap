@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <header className="flex-between">
-      <Logo />
+      <Logo path="/" />
       <div className="flex-between">
         <HeaderButton showWallet={showWalletHandler} />
         <User showUser={showUserHandler}/>
