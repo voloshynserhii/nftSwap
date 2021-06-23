@@ -3,3 +3,12 @@
     top: 9vh;
     right: 12vw;
 }
+.popup-header {
+    font-size: 0.7rem;
+}
+.popup-header span {
+    margin: 0 20px;
+}
+.popup-header img {
+    height: 1em;
+}

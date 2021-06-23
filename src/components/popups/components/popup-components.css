@@ -4,6 +4,7 @@
     box-sizing: border-box;
     border-radius: 34px;
     min-width: 20vw;
+    max-width: 25vw;
     min-height: 60vh;
     color: #FFFFFF;
     text-transform: uppercase;
@@ -23,5 +24,11 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+.wallet-icon img {
+    width: 90%;
+    height: 90%
+}
+.terms-field {
     
 }

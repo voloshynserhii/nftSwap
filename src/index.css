@@ -4,6 +4,7 @@
   --border-color: #4C3F91;
   --popup-bg-color: #4C3F91;
   --wallet-field: #5C519B;
+  --link-blue: #3B87DE;
   font-size: 18px;
 }
 
@@ -43,5 +44,10 @@ code {
 .link {
   color: #FFFFFF;
   font-size: 0.6rem;
+  text-transform: initial;
+}
+.link-blue {
+  color: var(--link-blue);
+  font-size: 0.7rem;
   text-transform: initial;
 }

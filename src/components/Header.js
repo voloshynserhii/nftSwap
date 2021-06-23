@@ -30,7 +30,7 @@ const Header = () => {
         <HeaderButton showWallet={showWalletHandler} />
         <User showUser={showUserHandler}/>
       </div>
-      {wallet && <ConnectWallet className="header-popup"/>}
+      {wallet && <ConnectWallet className="header-popup" onClose={showWalletHandler}/>}
       {account && <Account className="header-popup"/>}
     </header>
   );

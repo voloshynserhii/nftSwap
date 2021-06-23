@@ -1,28 +1,30 @@
+import Icon from '../../assets/icons/logo.png';
+
 const WALLETS = [
   {
     id: "wallet1",
     name: "METAMASK",
-    icon: "",
+    icon: Icon,
   },
   {
     id: "wallet2",
     name: "BINANCE CHAIN WALLET",
-    icon: "",
+    icon: Icon,
   },
   {
     id: "wallet3",
     name: "TRUST WALLET",
-    icon: "",
+    icon: Icon,
   },
   {
     id: "wallet4",
     name: "MATH WALLET",
-    icon: "",
+    icon: Icon,
   },
   {
     id: "wallet5",
     name: "SAFEPAL WALLET",
-    icon: "",
+    icon: Icon,
   },
 ];
 export default WALLETS;
