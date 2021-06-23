@@ -9,7 +9,8 @@ header {
   background: var(--main-color);
   padding: 5vh 0 0 0;
   height: 88vh;
-  max-width: 22%;
+  min-width: 200px;
+  max-width: 18%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -44,4 +45,5 @@ footer {
   height: 5vh;
   width: 100vw;
   background-color: var(--main-color);
+  color: #ffffff;
 }

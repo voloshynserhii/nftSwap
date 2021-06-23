@@ -1,8 +1,27 @@
 .popup {
     background-color: var(--popup-bg-color);
-    padding: 10px;
+    padding: 25px 5%;
     box-sizing: border-box;
     border-radius: 34px;
     min-width: 20vw;
     min-height: 60vh;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.wallet-field {
+    width: 100%;
+    height: auto;
+    border-radius:30px;
+    background-color: var(--wallet-field);
+    padding: 8px 15px;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+    margin: 10px 0;
+}
+.wallet-icon {
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
 }

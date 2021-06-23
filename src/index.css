@@ -3,6 +3,7 @@
   --accent-color: #4C3F91;
   --border-color: #4C3F91;
   --popup-bg-color: #4C3F91;
+  --wallet-field: #5C519B;
   font-size: 18px;
 }
 
@@ -29,4 +30,18 @@ code {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+}
+.full-width {
+  width: 100%;
+}
+.link {
+  color: #FFFFFF;
+  font-size: 0.6rem;
+  text-transform: initial;
 }

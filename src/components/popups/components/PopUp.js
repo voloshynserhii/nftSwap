@@ -4,7 +4,7 @@ import './popup-components.css';
 
 const PopUp = props => {
     return (
-        <div className="popup">
+        <div className="popup flex-column">
             {props.children}
         </div>
     )
