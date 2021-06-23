@@ -34,3 +34,12 @@
 .switch img {
     height: 93%;
 }
+.header-logoName {
+    width: 100%;
+    padding: 0 50px;
+}
+.header-logoName img {
+    width: 43%;
+    height: auto;
+    margin-bottom: 10px;
+}
