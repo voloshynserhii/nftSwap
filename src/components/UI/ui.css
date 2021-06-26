@@ -43,3 +43,35 @@
     height: auto;
     margin-bottom: 10px;
 }
+.metamask-logo {
+    width: 30%;
+    height: auto;
+    border-radius:50%;
+    background: #4C4AA1;
+    padding: 10px;
+}
+.metamask-logo img {
+    width: 100%;
+}
+.start-layer {
+    width: 100%;
+    height: 100%;
+    padding: 20% 0;
+    box-sizing: border-box;
+}
+.start-layer h4 {
+    margin: 15% 0 20% 0;
+}
+.popup-button {
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-family: SF UI Text, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+.outlined {
+    border: 1px solid var(--popup-button-color);
+    color: var(--popup-button-color);
+}

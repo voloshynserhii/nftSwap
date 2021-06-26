@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import { Logo, HeaderButton, User } from "./UI";
 import ConnectWallet from "./popups/ConnectWallet";
-import Account from "./popups/Account";
+import StartPopUp from "./popups/StartPopUp";
 import "./main.css";
 
 const Header = () => {
@@ -31,7 +31,7 @@ const Header = () => {
         <User showUser={showUserHandler}/>
       </div>
       {wallet && <ConnectWallet className="header-popup" onClose={showWalletHandler}/>}
-      {account && <Account className="header-popup"/>}
+      {account && <StartPopUp className="header-popup"/>}
     </header>
   );
 };
