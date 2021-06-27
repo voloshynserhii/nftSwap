@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 
 import { Logo, HeaderButton, User } from "./UI";
-import ConnectWallet from "./popups/ConnectWallet";
-import StartPopUp from "./popups/StartPopUp";
+// import ConnectWallet from "./popups/ConnectWallet";
+import {StartDepositPopUp, StartAccountPopUp, SignInPopUp} from './popups';
+
 import "./main.css";
 
 const Header = () => {
@@ -30,8 +31,9 @@ const Header = () => {
         <HeaderButton showWallet={showWalletHandler} />
         <User showUser={showUserHandler}/>
       </div>
-      {wallet && <ConnectWallet className="header-popup" onClose={showWalletHandler}/>}
-      {account && <StartPopUp className="header-popup"/>}
+      {/* {account && <SignInPopUp className="header-popup"/>} */}
+      {account && <StartAccountPopUp className="header-popup"/>}
+      {wallet && <StartDepositPopUp className="header-popup"/>}
     </header>
   );
 };

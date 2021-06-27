@@ -39,3 +39,30 @@
     min-width: 20vw;
     box-sizing: border-box;
 }
+.popup-input {
+    border: none;
+    background-color: #FFFFFF;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 5px 0;
+    color: var(--popup-placeholder-color);
+    font-size:0.7rem;
+}
+::placeholder {
+    color: var(--popup-placeholder-color);
+    font-size:0.7rem;
+}
+.popup-confirm {
+    border: none;
+    padding: 15px;
+    background: var(--popup-confirm-color);
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    margin: 5px 0;
+}
+.popup-link {
+    color: var(--popup-placeholder-color);
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+}

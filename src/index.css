@@ -9,14 +9,16 @@
   --popup-bg-color: #F8F8F8;
   --popup-text-color: #373583;
   --popup-button-color: #4C4AA1;
+  --popup-placeholder-color: #807DC0;
+  --popup-confirm-color: rgba(59, 56, 208, .5);
   font-size: 18px;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: SF UI Display, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--main-color);
@@ -24,11 +26,15 @@ body {
 
 h4 {
   font-family: SF UI Display, sans-serif;
-  font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.3rem;
   line-height: 29px;
   color: var(--popup-text-color);
+}
+p {
+  font-size: 0.8rem;
+  line-height: 17px;
+  margin: 0;
 }
 .flex-center {
   display: flex;
@@ -50,6 +56,10 @@ h4 {
 }
 .full-width {
   width: 100%;
+  box-sizing: border-box;
+}
+.full-height {
+  height: 100%;
 }
 .link {
   color: #FFFFFF;

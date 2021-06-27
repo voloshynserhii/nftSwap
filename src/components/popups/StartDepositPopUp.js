@@ -1,14 +1,14 @@
 import React from "react";
 
-import PopUpLayer from "./components/PopUpLayer";
-import { MetaMaskLogo, PopUpButton } from "./../UI";
+import {PopUpLayer}from "./components";
+import { MetaMaskLogo, PopUpButton } from "../UI";
 import "./popups.css";
 
-const StartPopUp = (props) => {
+const StartDepositPopUp = (props) => {
   return (
     <div className={props.className}>
       <PopUpLayer>
-        <div className="flex-column start-layer">
+        <div className="flex-column full-width full-height start-layer">
           <MetaMaskLogo />
           <h4>MetaMask prototypes</h4>
           <PopUpButton className="outlined">Deposit & Send</PopUpButton>
@@ -17,4 +17,4 @@ const StartPopUp = (props) => {
     </div>
   );
 };
-export default StartPopUp;
+export default StartDepositPopUp;
