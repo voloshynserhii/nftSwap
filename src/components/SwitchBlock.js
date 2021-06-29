@@ -16,8 +16,8 @@ const SwitchBlock = () => {
   const day = !mode ? DayIcon : DayIconActive;
   return (
     <div className="switch-block full-width flex-column">
-      <SwitchMode className="border-top-round" image={day} onSwitchMode={onSwitchModeHandler} />
-      <SwitchMode className="border-bottom-round" image={night} onSwitchMode={onSwitchModeHandler} />
+      <SwitchMode className={mode ? "switch-active border-top-round" : "border-top-round"} image={day} onSwitchMode={onSwitchModeHandler} />
+      <SwitchMode className={mode ? "border-bottom-round" : "switch-active border-bottom-round"} image={night} onSwitchMode={onSwitchModeHandler} />
     </div>
   );
 };

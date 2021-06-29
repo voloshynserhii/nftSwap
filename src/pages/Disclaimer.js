@@ -1,8 +1,6 @@
 import React from 'react';
 
-import "./screens.css";
-
-const DisclaimerScreen = () => {
+const Disclaimer = () => {
     return (
         <div className="disclaimer-screen">
             <h1>Disclaimer Screen</h1>
@@ -10,4 +8,4 @@ const DisclaimerScreen = () => {
     )
 };
 
-export default DisclaimerScreen;
+export default Disclaimer;

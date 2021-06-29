@@ -1,8 +1,6 @@
 import React from 'react';
 
-import "./screens.css";
-
-const PoolScreen = () => {
+const Pool = () => {
     return (
         <div className="pool-screen">
             <h1>Pool Screen</h1>
@@ -10,4 +8,4 @@ const PoolScreen = () => {
     )
 };
 
-export default PoolScreen;
+export default Pool;

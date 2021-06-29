@@ -1,85 +1,106 @@
 .hamburger {
-    margin: 0 25px;
-    cursor: pointer;
+  margin: 0 25px;
+  cursor: pointer;
 }
 .header-logo {
-    height: 100%;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
 }
 .header-logo img {
-    height: 100%;
+  height: 70%;
 }
 .notification {
-    width: 45px;
-    height: 45px;
-    margin: 0 25px;
-    background: rgba(138, 154, 185, 0.1);
-    border-radius: 10px;
-    cursor: pointer;
+  width: 45px;
+  height: 45px;
+  margin: 0 25px;
+  background: rgba(138, 154, 185, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
 }
 .connect-wallet {
-    height: 45px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    padding: 12px;
-    font-size: 0.7rem;
-    background: rgba(138, 154, 185, 0.1);
-    cursor: pointer;
+  height: 45px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.7rem;
+  background: rgba(138, 154, 185, 0.1);
+  cursor: pointer;
 }
 .user {
-    border-radius: 10px;
-    width: 45px;
-    height: 45px;
-    box-sizing: border-box;
-    margin: 0 25px;
-    background: rgba(138, 154, 185, 0.1);
-    cursor: pointer;
+  border-radius: 10px;
+  width: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  margin: 0 25px;
+  background: rgba(138, 154, 185, 0.1);
+  cursor: pointer;
 }
 .user img {
-    width: 40%;
+  width: 40%;
 }
 .switch {
-    cursor: pointer;
-    width: 50%;
-    height: 35px;
-    background: rgba(138, 154, 185, 0.1);
+  cursor: pointer;
+  width: 50%;
+  height: 35px;
+  background: rgba(138, 154, 185, 0.1);
+}
+.switch-active {
+  background: #dd7f79;
 }
 .border-top-round {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: 2px solid #8A9AB9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 2px solid #8a9ab9;
+  border-bottom: none;
 }
 .border-bottom-round {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: 2px solid #4D165A;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid #4d165a;
+  /* border-top: none; */
 }
 .switch img {
-    width: 50%;
+  width: 50%;
 }
 .metamask-logo {
-    width: 30%;
-    height: auto;
-    border-radius:50%;
-    background: #4C4AA1;
-    padding: 10px;
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  background: #4c4aa1;
+  padding: 10px;
 }
 .metamask-logo img {
-    width: 100%;
+  width: 100%;
 }
 .popup-button {
-    box-sizing: border-box;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-family: SF UI Text, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    cursor: pointer;
-    min-width: 150px;
-    text-align: center;
-    margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-family: SF UI Text, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  min-width: 150px;
+  text-align: center;
+  margin: 10px 0;
 }
 .outlined {
-    border: 1px solid var(--popup-button-color);
-    color: var(--popup-button-color);
+  border: 1px solid var(--popup-button-color);
+  color: var(--popup-button-color);
+}
+.sidebar-link {
+  width: 100%;
+  height: auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vh 0;
+  box-sizing: border-box;
+}
+.sidebar-link-selected {
+  background-color: #dd7f79;
+  border-left: 0.4rem solid rgba(136, 6, 71, 1);
 }

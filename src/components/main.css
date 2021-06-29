@@ -1,14 +1,13 @@
 header {
   background: #FFFFFF;
-  height: 8%;
+  height: 12%;
   width: 100vw;
   box-sizing: border-box;
   border-bottom: 1px solid #F8FAFD;
 }
 main {
   display: flex;
-  align-items: center;
-  height: calc(92% - 6px);
+  height: calc(88% - 6px);
   width: 100%;
   background: #F8FAFD;
 }
@@ -22,7 +21,8 @@ main {
 .sidebar {
   background: #FFFFFF;
   height: 100%;
-  width: 4rem;
+  min-width: 75px;
+  max-width: 100px;
   padding-bottom: 25px;
   box-sizing: border-box;
   display: flex;
@@ -30,16 +30,4 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.sidebar-link {
-  width: 100%;
-  height: auto;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2vh 0;
-  box-sizing: border-box;
-}
-.sidebar-link-selected {
-  background-color: var(--border-color);
-}
+

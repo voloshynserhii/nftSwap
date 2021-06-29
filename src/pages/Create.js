@@ -1,8 +1,6 @@
 import React from 'react';
 
-import "./screens.css";
-
-const CreateScreen = () => {
+const Create = () => {
     return (
         <div className="create-screen">
             <h1>Create Screen</h1>
@@ -10,4 +8,4 @@ const CreateScreen = () => {
     )
 };
 
-export default CreateScreen;
+export default Create;

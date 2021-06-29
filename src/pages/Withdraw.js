@@ -1,8 +1,6 @@
 import React from 'react';
 
-import "./screens.css";
-
-const WithdrawScreen = () => {
+const Withdraw = () => {
     return (
         <div className="withdraw-screen">
             <h1>Withdraw Screen</h1>
@@ -10,4 +8,4 @@ const WithdrawScreen = () => {
     )
 };
 
-export default WithdrawScreen;
+export default Withdraw;

@@ -2,38 +2,38 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import {
-  HomeScreen,
-  SwapScreen,
-  PoolScreen,
-  CreateScreen,
-  CalendarScreen,
-  WithdrawScreen,
-  DisclaimerScreen,
-} from "./screens";
+  Home,
+  Swap,
+  Pool,
+  Create,
+  Calendar,
+  Withdraw,
+  Disclaimer,
+} from "./pages";
 
 const Router = () => {
   return (
     <Switch>
       <Route path={"/"} exact>
-        <HomeScreen />
+        <Home />
       </Route>
       <Route path={"/swap"} exact>
-        <SwapScreen />
+        <Swap />
       </Route>
       <Route path={"/pool"} exact>
-        <PoolScreen />
+        <Pool />
       </Route>
       <Route path={"/create"} exact>
-        <CreateScreen />
+        <Create />
       </Route>
       <Route path={"/calendar"} exact>
-        <CalendarScreen />
+        <Calendar />
       </Route>
       <Route path={"/withdraw"} exact>
-        <WithdrawScreen />
+        <Withdraw />
       </Route>
       <Route path={"/disclaimer"} exact>
-        <DisclaimerScreen />
+        <Disclaimer />
       </Route>
     </Switch>
   );
