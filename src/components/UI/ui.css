@@ -1,47 +1,60 @@
+.hamburger {
+    margin: 0 25px;
+    cursor: pointer;
+}
 .header-logo {
-    height: 90%;
+    height: 100%;
 }
 .header-logo img {
     height: 100%;
 }
+.notification {
+    width: 45px;
+    height: 45px;
+    margin: 0 25px;
+    background: rgba(138, 154, 185, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+}
 .connect-wallet {
-    height: 5vh;
+    height: 45px;
     box-sizing: border-box;
-    border-radius: 39px;
+    border-radius: 10px;
     padding: 12px;
     font-size: 0.7rem;
-    color: #FFFFFF;
-}
-.border-purple {
-    border: 2px solid var(--border-color);
+    background: rgba(138, 154, 185, 0.1);
     cursor: pointer;
 }
 .user {
-    border-radius: 50%;
-    width: 5.5vh;
-    height: 5.5vh;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
     box-sizing: border-box;
-    margin-left: 20px;
-}
-.user img {
-    width: 50%;
-}
-.switch {
-    height: 90%;
-    margin-right: 5px;
+    margin: 0 25px;
+    background: rgba(138, 154, 185, 0.1);
     cursor: pointer;
 }
+.user img {
+    width: 40%;
+}
+.switch {
+    cursor: pointer;
+    width: 50%;
+    height: 35px;
+    background: rgba(138, 154, 185, 0.1);
+}
+.border-top-round {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid #8A9AB9;
+}
+.border-bottom-round {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 2px solid #4D165A;
+}
 .switch img {
-    height: 93%;
-}
-.header-logoName {
-    width: 100%;
-    padding: 0 50px;
-}
-.header-logoName img {
-    width: 43%;
-    height: auto;
-    margin-bottom: 10px;
+    width: 50%;
 }
 .metamask-logo {
     width: 30%;

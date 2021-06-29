@@ -1,6 +1,6 @@
 import React from "react";
 
-import { LogoName, MainMenuButton } from "./UI";
+import { MainMenuButton } from "./UI";
 import HomeIcon from "../assets/icons/home.svg";
 import SwapIcon from "../assets/icons/swap.svg";
 import PoolIcon from "../assets/icons/pool.svg";
@@ -15,32 +15,17 @@ import "./main.css";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div>
-        <MainMenuButton image={HomeIcon} path="/">
-          HOME
-        </MainMenuButton>
-        <MainMenuButton image={SwapIcon} path="/swap">
-          SWAP
-        </MainMenuButton>
-        <MainMenuButton image={PoolIcon} path="/pool">
-          POOL
-        </MainMenuButton>
-        <MainMenuButton image={CreateIcon} path="/create">
-          CREATE
-        </MainMenuButton>
-        <MainMenuButton image={CalendarIcon} path="/calendar">
-          CALENDAR
-        </MainMenuButton>
-        <MainMenuButton image={WithdrawIcon} path="/withdraw">
-          WITHDRAW
-        </MainMenuButton>
-        <MainMenuButton image={DislaimerIcon} path="/disclaimer">
-          DISCLAIMER
-        </MainMenuButton>
+      <div className="full-width">
+        <MainMenuButton image={HomeIcon} path="/"/>
+        <MainMenuButton image={SwapIcon} path="/swap"/>
+        <MainMenuButton image={PoolIcon} path="/pool"/>
+        <MainMenuButton image={CreateIcon} path="/create"/>
+        <MainMenuButton image={CalendarIcon} path="/calendar"/>
+        <MainMenuButton image={WithdrawIcon} path="/withdraw"/>
+        <MainMenuButton image={DislaimerIcon} path="/disclaimer"/>
       </div>
-      <div>
+      <div className="full-width flex-center">
         <SwitchBlock />
-        <LogoName path="/" />
       </div>
     </div>
   );

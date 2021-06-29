@@ -5,7 +5,7 @@ import './ui.css';
 
 const User = props => {
     return (
-        <div className="border-purple user flex-center" onClick={props.showUser}>
+        <div className="user flex-center" onClick={props.showUser}>
             <img src={UserIcon} alt="logo" />
         </div>
     );

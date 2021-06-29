@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
-import LogoNameIcon from '../../assets/icons/logoName.png';
+import LogoIcon from '../../assets/icons/logo.png';
 
 const LogoName = props => {
     return (
         <NavLink className="header-logoName" to={props.path}>
-            <img src={LogoNameIcon} alt="logo" />
+            <img src={LogoIcon} alt="logo" />
         </NavLink>
     );
 };

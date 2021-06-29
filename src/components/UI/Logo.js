@@ -5,7 +5,7 @@ import LogoIcon from '../../assets/icons/logo.png';
 
 const Logo = props => {
     return (
-        <NavLink className="header-logo" to={props.path}>
+        <NavLink className="header-logo flex-center" to={props.path}>
             <img src={LogoIcon} alt="logo" />
         </NavLink>
     );

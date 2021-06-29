@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import { Logo, HeaderButton, User } from "./UI";
-// import ConnectWallet from "./popups/ConnectWallet";
-import {StartDepositPopUp, StartAccountPopUp, SignInPopUp} from './popups';
+import { Hamburger, HeaderButton, Logo, Notification, User } from "./UI";
+import ConnectWallet from "./popups/ConnectWallet";
+// import {StartDepositPopUp, StartAccountPopUp, SignInPopUp} from './popups';
 
 import "./main.css";
 
@@ -12,29 +12,41 @@ const Header = () => {
 
   const showWalletHandler = () => {
     setWallet((prev) => !prev);
-    if(account) {
+    if (account) {
       setAccount(false);
     }
   };
-  
+
   const showUserHandler = () => {
     setAccount((prev) => !prev);
-    if(wallet) {
+    if (wallet) {
       setWallet(false);
     }
   };
+  const onOpenMenuHandler = () => {
+  };
 
+  const onOpenNotificationHandler = () => {
+  };
+  
   return (
-    <header className="flex-between">
-      <Logo path="/" />
-      <div className="flex-between">
-        <HeaderButton showWallet={showWalletHandler} />
-        <User showUser={showUserHandler}/>
-      </div>
-      {/* {account && <SignInPopUp className="header-popup"/>} */}
-      {account && <StartAccountPopUp className="header-popup"/>}
-      {wallet && <StartDepositPopUp className="header-popup"/>}
-    </header>
+    <>
+      <header className="flex-between">
+        <div className="flex-between full-height">
+          <Hamburger openMenu={onOpenMenuHandler}/>
+          <Logo path="/" />
+        </div>
+        <div className="flex-between">
+          <Notification onOpenNotification={onOpenNotificationHandler}/>
+          <HeaderButton showWallet={showWalletHandler} />
+          <User showUser={showUserHandler} />
+        </div>
+        {wallet && <ConnectWallet className="header-popup" />}
+        {/* {account && <StartAccountPopUp className="header-popup"/>}
+      {wallet && <StartDepositPopUp className="header-popup"/>} */}
+      </header>
+      <hr className="header-border-bottom" />
+    </>
   );
 };
 export default Header;

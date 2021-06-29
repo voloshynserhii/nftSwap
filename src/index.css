@@ -23,7 +23,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: var(--main-color);
 }
-
 h4 {
   font-family: SF UI Display, sans-serif;
   font-weight: bold;
