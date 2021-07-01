@@ -34,7 +34,7 @@ const Header = () => {
       <header className="flex-between">
         <div className="flex-between full-height">
           <Hamburger openMenu={onOpenMenuHandler}/>
-          <Logo path="/" />
+          <Logo className="full-height flex-center" path="/" />
         </div>
         <div className="flex-between">
           <Notification onOpenNotification={onOpenNotificationHandler}/>
