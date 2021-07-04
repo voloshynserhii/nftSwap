@@ -22,7 +22,7 @@ const TopMoversSlider = () => {
 
   return (
     <CarouselProvider
-      className={classes.slider}
+      className={classes.carousel}
       naturalSlideWidth={400}
       naturalSlideHeight={400}
       visibleSlides={3}
@@ -32,21 +32,19 @@ const TopMoversSlider = () => {
       infinite
     >
       <h2>Top Movers</h2>
-      <Slider>
-        {movers.map((slide, index) =>
-            <Slide key={index} index={index} classNameHidden="mobile-hidden">
-              <SliderItem className={classes.sliderItem} image={slide.image} name={slide.name} price={slide.price} percentage={slide.percentage}/>
-            </Slide>
-        )}
-        {/* <Slide index={0} classNameHidden="mobile-hidden">
-          <SliderItem className={classes.sliderItem} />
-        </Slide>
-        <Slide index={1} classNameHidden="mobile-hidden">
-          <SliderItem className={classes.sliderItem} />
-        </Slide>
-        <Slide index={2} classNameHidden="mobile-hidden">
-          <SliderItem className={classes.sliderItem} />
-        </Slide> */}
+      <Slider className={classes.slider}>
+        {movers.map((slide, index) => (
+          <Slide key={index} index={index} classNameHidden="mobile-hidden">
+            <SliderItem
+              className={classes.sliderItem}
+              image={slide.image}
+              name={slide.name}
+              price={slide.price}
+              percentage={slide.percentage}
+              percentageColor={slide.percentage > 0 ? {color: '#0EC9B5'} : {color: '#FF2A57'}}
+            />
+          </Slide>
+        ))}
       </Slider>
       <ButtonBack className={classes.buttonBack}>
         <img src={ArrowIcon} alt="back" />

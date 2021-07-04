@@ -15,7 +15,7 @@ import classes from "../TopMoversSlider/home-slider.module.css";
 const NewsSlider = () => {
   return (
     <CarouselProvider
-      className={classes.slider}
+      className={classes.carousel}
       naturalSlideWidth={400}
       naturalSlideHeight={400}
       visibleSlides={1.5}
