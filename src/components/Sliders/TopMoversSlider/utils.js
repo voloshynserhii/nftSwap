@@ -1,4 +1,4 @@
-import Icon from '../../assets/sliders/amp.svg';
+import Icon from '../../../assets/sliders/amp.svg';
 
 export const TOP_MOVERS = [
   {

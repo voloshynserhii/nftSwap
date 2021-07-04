@@ -9,7 +9,7 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 import SliderItem from "../TopMoversSlider/SliderItem";
-import ArrowIcon from "../../assets/icons/slider-arrow.svg";
+import ArrowIcon from "../../../assets/icons/slider-arrow.svg";
 import classes from "../TopMoversSlider/home-slider.module.css";
 
 const NewsSlider = () => {
@@ -25,14 +25,11 @@ const NewsSlider = () => {
       infinite
     >
       <h2>News</h2>
-      <Slider>
+      <Slider className={classes.slider}>
         <Slide index={0} classNameHidden="mobile-hidden">
           <SliderItem className={classes.sliderItem} />
         </Slide>
         <Slide index={1} classNameHidden="mobile-hidden">
-          <SliderItem className={classes.sliderItem} />
-        </Slide>
-        <Slide index={2} classNameHidden="mobile-hidden">
           <SliderItem className={classes.sliderItem} />
         </Slide>
       </Slider>

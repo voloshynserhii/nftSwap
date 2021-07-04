@@ -1,6 +1,7 @@
 .carousel {
     position: relative;
     width: 48%;
+    min-height: 300px;
     margin: 4% 0;
 }
 .slider {

@@ -1,7 +1,6 @@
 import React from "react";
 
-import TopMoversSlider from "../components/TopMoversSlider";
-import NewsSlider from "../components/NewsSlider";
+import {TopMoversSlider, NewsSlider} from "../components/Sliders";
 import { Logo, StartButton } from "../components/UI";
 import HomeImage from "../assets/home-front.png";
 import classes from "./home.module.css";

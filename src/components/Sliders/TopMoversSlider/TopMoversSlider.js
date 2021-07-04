@@ -9,7 +9,7 @@ import {
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 import SliderItem from "./SliderItem";
-import ArrowIcon from "../../assets/icons/slider-arrow.svg";
+import ArrowIcon from "../../../assets/icons/slider-arrow.svg";
 import classes from "./home-slider.module.css";
 import { TOP_MOVERS } from "./utils";
 
