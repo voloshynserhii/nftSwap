@@ -1,0 +1,28 @@
+.slider {
+    position: relative;
+    width: 48%;
+    height: 300px;
+    margin:4% 0;
+}
+.buttonBack, .buttonNext {
+    background-color: transparent;
+    border: none;
+    height: 35px;
+    position: absolute;
+    top: 0;
+}
+.buttonNext {
+    right: 0%;
+}
+.buttonBack {
+    transform: rotateZ(180deg);
+    right: 10%;
+}
+.buttonBack img {
+    width: 100%;
+}
+.sliderItem {
+    border: 1px solid #8A9AB9;
+    padding: 35px;
+    border-radius:15px;
+}

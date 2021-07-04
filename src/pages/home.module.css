@@ -6,7 +6,6 @@
     background-size: cover;
     border-radius:10px;
     min-height: 25vh;
-    max-height: 50vh;
     padding: 4% 65% 4% 8%;
     box-sizing: border-box;
     color: #FFFFFF;
@@ -26,6 +25,9 @@
     font-size: 1rem;
     text-transform: uppercase;
     margin-top: 50px;
+}
+.startButton img {
+    width: 1rem;
 }
 h3 {
     margin: 30px 0 10px 0;
