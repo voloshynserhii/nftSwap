@@ -4,7 +4,8 @@
     right: 12vw;
 }
 .popup-header {
-    font-size: 0.7rem;
+    font-size: 1rem;
+    margin: 10px 0 20px 0;
 }
 .popup-header span {
     margin: 0 20px;

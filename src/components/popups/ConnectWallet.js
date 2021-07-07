@@ -11,7 +11,7 @@ import "./popups.css";
 const ConnectWallet = (props) => {
   return (
     <div className={props.className}>
-      <PopUp>
+      <PopUp onClose={props.onClose}>
         <div className="popup-header full-width flex-between">
           <span>SELECT WALLET</span>
           <span onClick={props.onClose}>

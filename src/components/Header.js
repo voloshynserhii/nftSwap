@@ -16,7 +16,9 @@ const Header = () => {
       setAccount(false);
     }
   };
-
+  const onCloseWalletHandler = () => {
+    setWallet((prev) => !prev);
+  }
   const showUserHandler = () => {
     setAccount((prev) => !prev);
     if (wallet) {
@@ -41,7 +43,7 @@ const Header = () => {
           <HeaderButton showWallet={showWalletHandler} />
           <User showUser={showUserHandler} />
         </div>
-        {wallet && <ConnectWallet className="header-popup" />}
+        {wallet && <ConnectWallet className="header-popup" onClose={onCloseWalletHandler}/>}
         {/* {account && <StartAccountPopUp className="header-popup"/>}
       {wallet && <StartDepositPopUp className="header-popup"/>} */}
       </header>

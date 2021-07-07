@@ -1,12 +1,13 @@
-import React from 'react';
+import React from "react";
 
-import './popup-components.css';
+import "./popup-components.css";
 
-const PopUp = props => {
-    return (
-        <div className="popup flex-column">
-            {props.children}
-        </div>
-    )
+const PopUp = (props) => {
+  return (
+    <>
+      <div className="layer" onClick={props.onClose}></div>
+      <div className="popup flex-column">{props.children}</div>
+    </>
+  );
 };
 export default PopUp;

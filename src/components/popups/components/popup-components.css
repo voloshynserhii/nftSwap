@@ -1,19 +1,25 @@
 .popup {
-    background-color: var(--popup-bg);
-    padding: 25px 5%;
+    position: sticky;
+    background-color: #FFFFFF;
+    padding: 20px 5%;
     box-sizing: border-box;
     border-radius: 34px;
     min-width: 20vw;
     max-width: 25vw;
-    min-height: 60vh;
-    color: #FFFFFF;
     text-transform: uppercase;
+    z-index: 1000;
+}
+.terms-field {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
 }
 .wallet-field {
     width: 100%;
     height: auto;
-    border-radius:30px;
-    background-color: var(--wallet-field);
+    border-radius: 10px;
+    background-color: gray;
     padding: 8px 15px;
     box-sizing: border-box;
     font-size: 0.7rem;
@@ -62,7 +68,7 @@
     margin: 5px 0;
 }
 .popup-link {
-    color: var(--popup-placeholder-color);
+    /* color: var(--popup-placeholder-color); */
     font-size: 0.7rem;
     line-height: 0.9rem;
 }

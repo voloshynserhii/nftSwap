@@ -2,6 +2,7 @@ import React from "react";
 
 import {TopMoversSlider, NewsSlider} from "../components/Sliders";
 import { Logo, StartButton } from "../components/UI";
+import CryptocurrencyTable from "../components/CryptocurrencyTable";
 import HomeImage from "../assets/home-front.png";
 import classes from "./home.module.css";
 
@@ -21,6 +22,7 @@ const Home = () => {
         <TopMoversSlider />
         <NewsSlider />
       </div>
+      <CryptocurrencyTable />
     </div>
   );
 };
