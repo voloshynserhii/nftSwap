@@ -13,7 +13,7 @@ const ConnectWallet = (props) => {
     <div className={props.className}>
       <PopUp onClose={props.onClose}>
         <div className="popup-header full-width flex-between">
-          <span>SELECT WALLET</span>
+          <span>Select Wallet</span>
           <span onClick={props.onClose}>
             <img src={CloseIcon} alt="close" />
           </span>

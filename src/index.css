@@ -41,6 +41,9 @@ p {
 .flex {
   display: flex;
 }
+.center {
+  align-items: center;
+}
 .inline {
   display: inline;
 }
