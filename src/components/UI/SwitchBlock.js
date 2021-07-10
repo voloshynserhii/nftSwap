@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-import { SwitchMode } from "./UI";
-import DayIcon from "../assets/icons/day-mode.svg";
-import DayIconActive from "../assets/icons/dayMode-active.svg";
-import NightIcon from "../assets/icons/night-mode.svg";
-import NightIconActive from "../assets/icons/nightMode-active.svg";
+import { SwitchMode } from ".";
+import DayIcon from "../../assets/icons/day-mode.svg";
+import DayIconActive from "../../assets/icons/dayMode-active.svg";
+import NightIcon from "../../assets/icons/night-mode.svg";
+import NightIconActive from "../../assets/icons/nightMode-active.svg";
 
 const SwitchBlock = () => {
   const [mode, setMode] = useState(false);

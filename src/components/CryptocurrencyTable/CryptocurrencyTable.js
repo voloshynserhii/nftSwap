@@ -5,9 +5,9 @@ import classes from './cryptocurrency-table.module.css'
 
 const CryptocurrencyTable = () => {
     return (
-        <div className={classes.table}>
+        <table className={classes.table}>
             <CryptocurrencyTableHeader />
-        </div>
+        </table>
     );
 };
 export default CryptocurrencyTable;

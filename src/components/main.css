@@ -14,7 +14,7 @@ main {
 .header-border-bottom {
   width: 100vw;
   height: 6px;
-  background: #4D165A;
+  background: linear-gradient(75.94deg, #4D165A 5%, #B5507F 62.6%, #DD7F79 89.98%);
   margin: 0;
   border: none;
 }

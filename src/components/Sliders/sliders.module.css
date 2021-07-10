@@ -46,3 +46,31 @@
     font-size: 1.8rem;
     margin: 0;
 }
+.newsImage{
+    margin-right: 1.5rem;
+}
+.newsTitle {
+    font-size: 1rem;
+}
+.newsTitle>span {
+    margin: 0;
+}
+.newsTitle>span::before {
+   content: '\2022';
+}
+.newsTitle>span:nth-child(1)::before {
+    content: '';
+}
+.newsText {
+    color: #16214D;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.528px;
+    margin-top: 1rem;
+}
+.link {
+    color: #6512EC;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}

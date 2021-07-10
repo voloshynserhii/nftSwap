@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import {
   CarouselProvider,
   Slider,
@@ -8,17 +8,24 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-import SliderItem from "../TopMoversSlider/SliderItem";
+import SliderItem from "./SliderItem";
 import ArrowIcon from "../../../assets/icons/slider-arrow.svg";
-import classes from "../TopMoversSlider/home-slider.module.css";
+import {NEWS} from './utils';
+import classes from "../sliders.module.css";
 
 const NewsSlider = () => {
+  const [news, setNews] = useState([]);
+
+  useEffect(() => {
+    setNews(NEWS);
+  }, []);
+  
   return (
     <CarouselProvider
       className={classes.carousel}
       naturalSlideWidth={400}
       naturalSlideHeight={400}
-      visibleSlides={1.5}
+      visibleSlides={1.2}
       totalSlides={3}
       step={1}
       isIntrinsicHeight
@@ -26,12 +33,18 @@ const NewsSlider = () => {
     >
       <h2>News</h2>
       <Slider className={classes.slider}>
-        <Slide index={0} classNameHidden="mobile-hidden">
-          <SliderItem className={classes.sliderItem} />
-        </Slide>
-        <Slide index={1} classNameHidden="mobile-hidden">
-          <SliderItem className={classes.sliderItem} />
-        </Slide>
+      {news.map((slide, index) => (
+          <Slide key={index} index={index} classNameHidden="mobile-hidden">
+            <SliderItem
+              className={classes.sliderItem}
+              image={slide.image}
+              source={slide.source}
+              date={slide.date}
+              topic={slide.topic}
+              text={slide.text}
+            />
+          </Slide>
+        ))}
       </Slider>
       <ButtonBack className={classes.buttonBack}>
         <img src={ArrowIcon} alt="back" />

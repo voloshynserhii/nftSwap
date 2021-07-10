@@ -15,25 +15,27 @@
   height: 45px;
   margin: 0 25px;
   background: rgba(138, 154, 185, 0.1);
-  border-radius: 10px;
+  border-radius: 16px;
   cursor: pointer;
 }
 .connect-wallet {
   height: 45px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 14px;
   padding: 12px;
   font-size: 0.7rem;
-  background: rgba(138, 154, 185, 0.1);
+  background: linear-gradient(90deg, #4D165A 0%, #B5507F 67.78%, #DD7F79 100%);
+  color: #FFFFFF;
+  font-weight: 600;
   cursor: pointer;
 }
 .user {
-  border-radius: 10px;
+  border-radius: 16px;
   width: 45px;
   height: 45px;
   box-sizing: border-box;
   margin: 0 25px;
-  background: rgba(138, 154, 185, 0.1);
+  background: linear-gradient(180deg, rgba(77, 22, 90, 0.1) 0%, rgba(181, 80, 127, 0.1) 67.78%, rgba(221, 127, 121, 0.1) 100%);
   cursor: pointer;
 }
 .user img {
@@ -41,27 +43,27 @@
 }
 .switch {
   cursor: pointer;
-  width: 50%;
-  height: 35px;
+  width: 44px;
+  height: 44px;
   background: rgba(138, 154, 185, 0.1);
 }
 .switch-active {
-  background: #dd7f79;
+  background: linear-gradient(180deg, #4D165A 0%, #B5507F 67.78%, #DD7F79 100%);
+}
+.switch img {
+  width: 50%;
 }
 .border-top-round {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border: 2px solid #8a9ab9;
+  /* border: 1px solid rgba(255, 255, 255, 0.0784314); */
   border-bottom: none;
 }
 .border-bottom-round {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border: 2px solid #4d165a;
-  /* border-top: none; */
-}
-.switch img {
-  width: 50%;
+  /* border: 1px solid rgba(255, 255, 255, 0.0784314); */
+  border-top: none;
 }
 .metamask-logo {
   width: 30%;
@@ -101,6 +103,16 @@
   box-sizing: border-box;
 }
 .sidebar-link-selected {
-  background-color: #dd7f79;
-  border-left: 0.4rem solid rgba(136, 6, 71, 1);
+  position: relative;
+  background: linear-gradient(180deg, rgba(77, 22, 90, 0.1) 0%, rgba(181, 80, 127, 0.1) 67.78%, rgba(221, 127, 121, 0.1) 100%);
 }
+.sidebar-link-selected::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: linear-gradient(180deg, #4D165A 0%, #B5507F 67.78%, #DD7F79 100%);
+}
+  
+

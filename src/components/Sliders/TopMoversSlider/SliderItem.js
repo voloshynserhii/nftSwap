@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./home-slider.module.css";
+import classes from "../sliders.module.css";
 
 const SliderItem = (props) => {
   

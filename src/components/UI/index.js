@@ -8,6 +8,7 @@ import Notification from "./Notification";
 import PopUpButton from "./PopUpButton";
 import StartButton from "./StartButton";
 import SwitchMode from "./SwitchMode";
+import SwitchBlock from "./SwitchBlock";
 import User from "./User";
 
 export {
@@ -21,5 +22,6 @@ export {
   PopUpButton,
   StartButton,
   SwitchMode,
+  SwitchBlock,
   User,
 };

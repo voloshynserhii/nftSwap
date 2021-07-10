@@ -10,14 +10,14 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 
 import SliderItem from "./SliderItem";
 import ArrowIcon from "../../../assets/icons/slider-arrow.svg";
-import classes from "./home-slider.module.css";
+import classes from "../sliders.module.css";
 import { TOP_MOVERS } from "./utils";
 
 const TopMoversSlider = () => {
-  const [movers, setmovers] = useState(TOP_MOVERS);
+  const [movers, setMovers] = useState([]);
 
   useEffect(() => {
-    setmovers(TOP_MOVERS);
+    setMovers(TOP_MOVERS);
   }, []);
 
   return (
