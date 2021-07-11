@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
+
+import classes from './swap.module.css';
 
 const Withdraw = () => {
     return (
-        <div className="withdraw-screen">
-            <h1>Withdraw Screen</h1>
+        <div className={`pages-overlay flex full-width ${classes.swap}`}>
+            <h1>Withdraw</h1>
         </div>
     )
 };

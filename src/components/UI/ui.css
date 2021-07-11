@@ -104,7 +104,7 @@
 }
 .sidebar-link-selected {
   position: relative;
-  background: linear-gradient(180deg, rgba(77, 22, 90, 0.1) 0%, rgba(181, 80, 127, 0.1) 67.78%, rgba(221, 127, 121, 0.1) 100%);
+  background: var(--linear-gradient-opacity);
 }
 .sidebar-link-selected::before {
   content: "";
@@ -112,7 +112,19 @@
   height: 100%;
   position: absolute;
   left: 0;
-  background: linear-gradient(180deg, #4D165A 0%, #B5507F 67.78%, #DD7F79 100%);
+  background: var(--linear-gradient);
+}
+.square {
+  background: var(--linear-gradient-opacity);
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 16px;
+  margin: 0 0.5rem;
+}
+.input-field {
+  width: auto;
+  margin: 0.7rem 0;
+  border: 1px solid rgba(138, 154, 185, 0.2);
 }
   
 

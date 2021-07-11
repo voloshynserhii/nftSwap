@@ -1,0 +1,14 @@
+.overlay {
+    background: #FFFFFF;
+    border-radius: 24px;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.table {
+    width: 65%;
+}
+.popup {
+    width: 32%;
+    padding: 50px 40px;
+    
+}
