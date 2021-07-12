@@ -5,15 +5,15 @@
     box-sizing: border-box;
     overflow: scroll;
 }
-.table::after {
+.header::after {
     content: " ";
-    width: 100%;
+    width: calc(100% + 6rem);
     height: auto;
     border: 1px solid rgba(138, 154, 185, 0.2);
     position: absolute;
     transform: translateX(-3rem);
 }
-.table {
+.header {
     width: 100%;
     position: relative;
 }
@@ -71,4 +71,22 @@
     line-height: 1.4rem;
     letter-spacing: 0.576px;
     color: #0EC9B5;
+}
+.tableOverlay {
+    padding: 3rem 0;
+}
+.table {
+    background: rgba(255, 255, 255, 0.0980392);
+    border: 1px solid rgba(138, 154, 185, 0.298039);
+    border-radius: 0.7rem;
+}
+.tableRow th {
+    border-bottom: 1px solid rgba(138, 154, 185, 0.298039);
+    padding: 1rem 0;
+}
+.tableRow td {
+    padding: 1rem 0;
+}
+.tableRow>th:first-child, .tableRow>td:first-child  {
+    text-align: center;
 }

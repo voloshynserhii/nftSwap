@@ -10,9 +10,9 @@ const SwapTableHeader = () => {
 
   const classTermPassive = `${classes.term} ${classes.termPassive}`;
   const classTermActive = `${classes.term} ${classes.termActive}`;
-  
+
   return (
-    <div className={`${classes.overlay} ${classes.table}`}>
+    <div className={classes.header}>
       <div className="flex center">
         <div>
           <img src={USDCIcon} alt="usdc" />
