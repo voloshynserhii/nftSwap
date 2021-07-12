@@ -1,14 +1,17 @@
 .overlay {
     background: #FFFFFF;
-    border-radius: 24px;
-    padding: 50px 0;
+    border-radius: 1.3rem;
+    padding: 3rem 0;
     box-sizing: border-box;
+    overflow: scroll;
 }
 .table {
     width: 65%;
 }
 .popup {
     width: 32%;
-    padding: 50px 40px;
-    
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

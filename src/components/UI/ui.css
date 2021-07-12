@@ -118,7 +118,7 @@
   background: var(--linear-gradient-opacity);
   padding: 1rem;
   width: fit-content;
-  border-radius: 16px;
+  border-radius: 0.9rem;
   margin: 0 0.5rem;
 }
 .input-field {
@@ -126,5 +126,18 @@
   margin: 0.7rem 0;
   border: 1px solid rgba(138, 154, 185, 0.2);
 }
-  
+.confirm-button {
+  background: rgba(138, 154, 185, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.34902);
+  box-sizing: border-box;
+  border-radius: 0.8rem;
+  padding: 5%;
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 0.9rem;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #8A9AB9;
+  margin: 1rem 0;
+}
 

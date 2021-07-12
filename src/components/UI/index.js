@@ -1,3 +1,4 @@
+import ConfirmButton from "./ConfirmButton";
 import Hamburger from "./Hamburger";
 import HeaderButton from "./HeaderButton";
 import InputField from "./InputField";
@@ -15,6 +16,7 @@ import User from "./User";
 import WalletButton from "./WalletButton";
 
 export {
+  ConfirmButton,
   Hamburger,
   HeaderButton,
   InputField,
