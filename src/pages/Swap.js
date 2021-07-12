@@ -1,15 +1,17 @@
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 
-import {SwapPopUp, SwapTable} from '../components/SwapComponents';
-import classes from './swap.module.css';
+import { SwapPopUp, SwapTableHeader } from "../components/SwapComponents";
+import classes from "./swap.module.css";
 
 const Swap = () => {
-    return (
-        <div className={`pages-overlay flex full-width ${classes.swap}`}>
-            <SwapTable />
-            <SwapPopUp />
-        </div>
-    )
+  return (
+    <div className={`pages-overlay flex full-width ${classes.swap}`}>
+      <div className={classes.swapTableWrapper}>
+        <SwapTableHeader />
+      </div>
+      <SwapPopUp />
+    </div>
+  );
 };
 
 export default Swap;

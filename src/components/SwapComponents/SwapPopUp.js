@@ -3,6 +3,8 @@ import React from "react";
 import { ConfirmButton, InputField, SettingsButton, WalletButton } from "../UI";
 import ArrowDownIcon from "../../assets/icons/arrow-down.svg";
 import SwapIcon from "../../assets/icons/Swap_icon.svg";
+import USDCIcon from "../../assets/icons/dollar.svg";
+import BUSDIcon from "../../assets/icons/BUSD.svg";
 import classes from "./swap-components.module.css";
 
 const SwapPopUp = () => {
@@ -15,26 +17,32 @@ const SwapPopUp = () => {
           <SettingsButton />
         </div>
       </div>
-      <div className="flex-between">
-        <span>Pay</span>
-        <span>Available: 500</span>
+      <div className="spacing-vertical">
+        <div className="flex-between">
+          <div className={classes.text1}>Pay</div>
+          <div className={classes.text2}>Available: 500</div>
+        </div>
+        <InputField icon={USDCIcon}  name="USDC"/>
       </div>
-      <InputField>USDC</InputField>
       <div className="flex-center">
         <img src={ArrowDownIcon} alt="Arrow" />
       </div>
-      <div className="flex-between">
-        <span>Receive (Estimated)</span>
-        <span>Available: 1200</span>
+      <div className="spacing-vertical">
+        <div className="flex-between">
+          <div className={classes.text1}>Receive (Estimated)</div>
+          <div className={classes.text2}>Available: 1200</div>
+        </div>
+        <InputField icon={BUSDIcon} name="BUSD"/>
       </div>
-      <InputField>BUSD</InputField>
       <div className="flex-center">
-        <span>1 USDC = 1.0005 USDC</span>
+        <div className={classes.text1}>1 USDC = 1.0005 USDC</div>
         <img src={SwapIcon} alt="Swap Icon" />
       </div>
       <ConfirmButton>Confirm Order</ConfirmButton>
       <div className="flex-center">
-        <span>Enter amount to see more trading details</span>
+        <div className={classes.text1}>
+          Enter amount to see more trading details
+        </div>
       </div>
     </div>
   );

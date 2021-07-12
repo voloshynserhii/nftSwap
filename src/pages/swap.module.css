@@ -1,3 +1,6 @@
 .swap {
     justify-content: space-between;
 }
+.swapTableWrapper {
+    width: 65%;
+}

@@ -4,9 +4,9 @@ import './ui.css';
 
 const ConfirmButton = props => {
     return (
-        <div className="flex-center confirm-button">
+        <button className="flex-center confirm-button" onClick={props.onConfirm}>
             {props.children}
-        </div>
+        </button>
     );
 };
 

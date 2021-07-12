@@ -123,7 +123,7 @@
 }
 .input-field {
   width: auto;
-  margin: 0.7rem 0;
+  margin: 0.4rem 0;
   border: 1px solid rgba(138, 154, 185, 0.2);
 }
 .confirm-button {
@@ -139,5 +139,21 @@
   text-transform: uppercase;
   color: #8A9AB9;
   margin: 1rem 0;
+}
+.input-text {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.528px;
+  color: #16214D;
+  margin: 0 1rem;
+}
+.select {
+  border: none;
+  border-radius: 50%;
+  padding: 0.1rem;
+  width: 1rem;
+  height: 1rem;
+  color:var(--primary-color);
 }
 
