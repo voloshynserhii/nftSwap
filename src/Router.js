@@ -2,13 +2,14 @@ import React from "react";
 import { Route, Switch } from "react-router-dom";
 
 import {
+  Calendar,
+  Create,
+  Disclaimer,
+  Market,
   Home,
   Swap,
   Pool,
-  Create,
-  Calendar,
   Withdraw,
-  Disclaimer,
 } from "./pages";
 
 const Router = () => {
@@ -34,6 +35,9 @@ const Router = () => {
       </Route>
       <Route path={"/disclaimer"} exact>
         <Disclaimer />
+      </Route>
+      <Route path={"/market"} exact>
+        <Market />
       </Route>
     </Switch>
   );

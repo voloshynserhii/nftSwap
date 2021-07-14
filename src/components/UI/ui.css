@@ -106,6 +106,15 @@
   position: relative;
   background: var(--linear-gradient-opacity);
 }
+.sidebar-image-selected {
+  display: none;
+}
+.sidebar-link-selected .sidebar-image-selected {
+  display: block;
+}
+.sidebar-link-selected .sidebar-image {
+  display: none;
+}
 .sidebar-link-selected::before {
   content: "";
   width: 8px;

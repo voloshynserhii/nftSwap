@@ -8,13 +8,15 @@ const SwapTable = () => {
       <h2>Order History</h2>
       <div className={classes.tableOverlay}>
         <table id="orderHistory" className={`full-width ${classes.table}`}>
-          <tr className={classes.tableRow}>
-            <th>No.</th>
-            <th>Received</th>
-            <th>Paid</th>
-            <th>Price</th>
-            <th>Status</th>
-          </tr>
+          <thead>
+            <tr className={classes.tableRow}>
+              <th>No.</th>
+              <th>Received</th>
+              <th>Paid</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+          </thead>
           <tr className={classes.tableRow}>
             <td>1</td>
             <td>132.5286782 BUSD</td>
