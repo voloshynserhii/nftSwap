@@ -1,0 +1,11 @@
+.market {
+    justify-content: space-between;
+}
+.marketTableWrapper {
+    width: 65%;
+    background: #FFFFFF;
+    border-radius: 1.3rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}

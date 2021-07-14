@@ -1,13 +1,18 @@
 // import React, {useState} from 'react';
 
-import classes from './swap.module.css';
+import SwapTableHeader from '../components/SwapComponents/SwapTableHeader'
+import MarketPopUp from "../components/MarketComponents/MarketPopUp";
+import classes from "./market.module.css";
 
 const Market = () => {
-    return (
-        <div className={`pages-overlay flex full-width ${classes.swap}`}>
-            <h1>Market</h1>
-        </div>
-    )
+  return (
+    <div className={`pages-overlay flex full-width ${classes.market}`}>
+      <div className={classes.marketTableWrapper}>
+        <SwapTableHeader />
+      </div>
+      <MarketPopUp />
+    </div>
+  );
 };
 
 export default Market;
