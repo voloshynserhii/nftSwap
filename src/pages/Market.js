@@ -15,10 +15,9 @@ const Market = () => {
     <div className={`pages-overlay flex full-width ${classes.market}`}>
       <div className={classes.marketTableWrapper}>
         <SwitchGroup switchHandler={onSwitchHandler} />
-        <SwapTableHeader />
-        {item === "orders" && <h2>orders</h2>}
-        {item === "book" && <h2>book</h2>}
-        {item === "graph" && <h2>graph</h2>}
+        {item === "orders" && <SwapTableHeader />}
+        {item === "book" && <h2>BUSD Chart</h2>}
+        {item === "graph" && <SwapTableHeader />}
       </div>
       <MarketPopUp />
     </div>
