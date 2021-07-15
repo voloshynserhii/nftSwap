@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ConfirmButton, InputField, SettingsButton, WalletButton } from "../UI";
+import { ConfirmButton, InputField } from "../UI";
 import PopUpHeader from "./PopUpHeader";
 import PopUpOverlay from "./PopUpOverlay";
 import ArrowDownIcon from "../../assets/icons/arrow-down.svg";

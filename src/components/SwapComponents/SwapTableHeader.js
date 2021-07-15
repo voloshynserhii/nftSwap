@@ -12,7 +12,7 @@ const SwapTableHeader = () => {
   const classTermActive = `${classes.term} ${classes.termActive}`;
 
   return (
-    <div className={classes.header}>
+    <>
       <div className="flex center">
         <div>
           <img src={USDCIcon} alt="usdc" />
@@ -48,7 +48,7 @@ const SwapTableHeader = () => {
           </span>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

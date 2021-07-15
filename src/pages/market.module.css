@@ -9,3 +9,6 @@
     box-sizing: border-box;
     overflow-y: scroll;
 }
+.marketTableWrapper .header::after {
+    display: none;
+}

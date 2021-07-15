@@ -9,3 +9,15 @@
     box-sizing: border-box;
     overflow-y: scroll;
 }
+.header::after {
+    content: " ";
+    width: calc(100% + 6rem);
+    height: auto;
+    border: 1px solid rgba(138, 154, 185, 0.2);
+    position: absolute;
+    transform: translateX(-3rem);
+}
+.header {
+    width: 100%;
+    position: relative;
+}
