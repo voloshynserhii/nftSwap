@@ -4,49 +4,32 @@ import SwitchBlock from "../SwitchBlock";
 import SwitchButton from "../SwitchButton";
 
 const SwitchGroup = (props) => {
-  const [orders, setOrders] = useState(true);
-  const [graph, setGraph] = useState(false);
-  const [book, setBook] = useState(false);
+  const [table, setTable] = useState('orders');
 
-  const onOrdersHandler = () => {
-    setOrders(true);
-    setGraph(false);
-    setBook(false);
-  };
-  const onGraphHandler = () => {
-    setOrders(false);
-    setGraph(true);
-    setBook(false);
-  };
-  const onBookHandler = () => {
-    setOrders(false);
-    setGraph(false);
-    setBook(true);
-  };
-  if (orders) {
+  if (table === 'orders') {
     return (
-      <SwitchBlock onClick={props.switchHandler}>
+      <SwitchBlock onClick={props.switchHandler(table)}>
         <SwitchButton>Orders</SwitchButton>
-        <div className="switch-passive" onClick={onBookHandler}>Order Book</div>
-        <div className="switch-passive" onClick={onGraphHandler}>Price Graph</div>
+        <div className="switch-passive" onClick={() => setTable('book')}>Order Book</div>
+        <div className="switch-passive" onClick={() => setTable('graph')}>Price Graph</div>
       </SwitchBlock>
     );
   }
-  if (graph) {
+  if (table === 'graph') {
     return (
-      <SwitchBlock onClick={props.switchHandler}>
-        <div className="switch-passive" onClick={onOrdersHandler}>Orders</div>
-        <div className="switch-passive" onClick={onBookHandler}>Order Book</div>
+      <SwitchBlock onClick={props.switchHandler(table)}>
+        <div className="switch-passive" onClick={() => setTable('orders')}>Orders</div>
+        <div className="switch-passive" onClick={() => setTable('book')}>Order Book</div>
         <SwitchButton>Price Graph</SwitchButton>
       </SwitchBlock>
     );
   }
-  if (book) {
+  if (table === 'book') {
     return (
-      <SwitchBlock onClick={props.switchHandler}>
-        <div className="switch-passive" onClick={onOrdersHandler}>Orders</div>
+      <SwitchBlock onClick={props.switchHandler(table)}>
+        <div className="switch-passive" onClick={() => setTable('orders')}>Orders</div>
         <SwitchButton>Order Book</SwitchButton>
-        <div className="switch-passive" onClick={onGraphHandler}>Price Graph</div>
+        <div className="switch-passive" onClick={() => setTable('graph')}>Price Graph</div>
       </SwitchBlock>
     );
   }
