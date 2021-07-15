@@ -3,6 +3,7 @@
   --link-blue: #3B87DE;
   --linear-gradient:linear-gradient(180deg, #4D165A 0%, #B5507F 67.78%, #DD7F79 100%);
   --linear-gradient-opacity: linear-gradient(180deg, rgba(77, 22, 90, 0.1) 0%, rgba(181, 80, 127, 0.1) 67.78%, rgba(221, 127, 121, 0.1) 100%);
+  --linear-background: linear-gradient(90deg, #4D165A 0%, #B5507F 67.78%, #DD7F79 100%);
   
   --popup-bg-color: #F8F8F8;
   --popup-text-color: #373583;
@@ -135,4 +136,12 @@ th {
 }
 .switch-passive {
   padding: 0.6rem 3rem;
+}
+.gray-background {
+  background: rgba(138, 154, 185, 0.2);
+  color: #8A9AB9;
+}
+.linear-background {
+  background: var(--linear-background);
+  color: #fff;
 }

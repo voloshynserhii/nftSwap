@@ -34,7 +34,7 @@ const SwapPopUp = () => {
         <div className={classes.text1}>1 USDC = 1.0005 USDC</div>
         <img src={SwapIcon} alt="Swap Icon" />
       </div>
-      <ConfirmButton>Confirm Order</ConfirmButton>
+      <ConfirmButton className="gray-background">Confirm Order</ConfirmButton>
       <div className="flex-center">
         <div className={classes.text1}>
           Enter amount to see more trading details
