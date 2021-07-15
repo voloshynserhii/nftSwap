@@ -3,4 +3,11 @@
     border-radius: 16px;
     padding: 8px;
     margin-bottom: 4rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.9rem;
+    text-align: center;
+    letter-spacing: 0.528px;
+    color: #8A9AB9;
+
 }
