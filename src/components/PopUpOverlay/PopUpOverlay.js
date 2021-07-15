@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./swap-components.module.css";
+import classes from "./popup-overlay.module.css";
 
 const PopUpOverlay = (props) => {
   return (

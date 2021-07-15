@@ -5,7 +5,7 @@ import { MarketPopUp, SwitchGroup } from "../components/MarketComponents";
 import classes from "./market.module.css";
 
 const Market = () => {
-  const [item, setItem] = useState();
+  const [item, setItem] = useState('');
 
   const onSwitchHandler = (table) => {
     setItem(() => table);
@@ -16,8 +16,8 @@ const Market = () => {
       <div className={classes.marketTableWrapper}>
         <SwitchGroup switchHandler={onSwitchHandler} />
         {item === "orders" && <SwapTableHeader />}
-        {item === "book" && <h2>BUSD Chart</h2>}
-        {item === "graph" && <SwapTableHeader />}
+        {item === "graph" && <h2>BUSD Chart</h2>}
+        {item === "book" && <SwapTableHeader />}
       </div>
       <MarketPopUp />
     </div>

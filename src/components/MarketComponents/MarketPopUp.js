@@ -1,8 +1,8 @@
 import React from "react";
 
 // import { ConfirmButton, InputField, SettingsButton, WalletButton } from "../UI";
-import PopUpHeader from "../SwapComponents/PopUpHeader";
-import PopUpOverlay from "../SwapComponents/PopUpOverlay";
+import PopUpHeader from "../PopUpHeader";
+import PopUpOverlay from "../PopUpOverlay";
 
 const MarketPopUp = () => {
   return (

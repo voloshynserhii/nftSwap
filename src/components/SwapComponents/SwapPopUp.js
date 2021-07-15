@@ -1,8 +1,8 @@
 import React from "react";
 
 import { ConfirmButton, InputField } from "../UI";
-import PopUpHeader from "./PopUpHeader";
-import PopUpOverlay from "./PopUpOverlay";
+import PopUpHeader from "../PopUpHeader";
+import PopUpOverlay from "../PopUpOverlay";
 import ArrowDownIcon from "../../assets/icons/arrow-down.svg";
 import SwapIcon from "../../assets/icons/Swap_icon.svg";
 import USDCIcon from "../../assets/icons/dollar.svg";

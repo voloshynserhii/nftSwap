@@ -10,11 +10,11 @@ const SwitchGroup = (props) => {
     return (
       <SwitchBlock onClick={props.switchHandler(table)}>
         <SwitchButton>Orders</SwitchButton>
-        <div className="switch-passive" onClick={() => setTable("book")}>
-          Order Book
-        </div>
         <div className="switch-passive" onClick={() => setTable("graph")}>
           Price Graph
+        </div>
+        <div className="switch-passive" onClick={() => setTable("book")}>
+          Order Book
         </div>
       </SwitchBlock>
     );
@@ -25,10 +25,10 @@ const SwitchGroup = (props) => {
         <div className="switch-passive" onClick={() => setTable("orders")}>
           Orders
         </div>
+        <SwitchButton>Price Graph</SwitchButton>
         <div className="switch-passive" onClick={() => setTable("book")}>
           Order Book
         </div>
-        <SwitchButton>Price Graph</SwitchButton>
       </SwitchBlock>
     );
   }
@@ -38,10 +38,10 @@ const SwitchGroup = (props) => {
         <div className="switch-passive" onClick={() => setTable("orders")}>
           Orders
         </div>
-        <SwitchButton>Order Book</SwitchButton>
         <div className="switch-passive" onClick={() => setTable("graph")}>
           Price Graph
         </div>
+        <SwitchButton>Order Book</SwitchButton>
       </SwitchBlock>
     );
   }

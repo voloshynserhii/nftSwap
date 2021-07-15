@@ -1,0 +1,14 @@
+.overlay {
+    background: #FFFFFF;
+    border-radius: 1.3rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.popup {
+    width: 32%;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
