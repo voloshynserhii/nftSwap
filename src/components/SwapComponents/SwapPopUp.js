@@ -1,6 +1,7 @@
 import React from "react";
 
-import { ConfirmButton, InputField } from "../UI";
+import { ConfirmButton } from "../UI";
+import SwapInputField from "./SwapInputField";
 import PopUpHeader from "../PopUpHeader";
 import PopUpOverlay from "../PopUpOverlay";
 import ArrowDownIcon from "../../assets/icons/arrow-down.svg";
@@ -18,7 +19,7 @@ const SwapPopUp = () => {
           <div className={classes.text1}>Pay</div>
           <div className={classes.text2}>Available: 500</div>
         </div>
-        <InputField icon={USDCIcon} name="USDC" />
+        <SwapInputField icon={USDCIcon} name="USDC" />
       </div>
       <div className="flex-center">
         <img src={ArrowDownIcon} alt="Arrow" />
@@ -28,7 +29,7 @@ const SwapPopUp = () => {
           <div className="text1">Receive (Estimated)</div>
           <div className="text2">Available: 1200</div>
         </div>
-        <InputField icon={BUSDIcon} name="BUSD" />
+        <SwapInputField icon={BUSDIcon} name="BUSD" />
       </div>
       <div className="flex-center">
         <div className={classes.text1}>1 USDC = 1.0005 USDC</div>
