@@ -1,6 +1,6 @@
 header {
   background: #FFFFFF;
-  height: 12%;
+  height: 60px;
   width: 100vw;
   box-sizing: border-box;
   border-bottom: 1px solid #F8FAFD;
@@ -13,7 +13,7 @@ main {
 }
 .header-border-bottom {
   width: 100vw;
-  height: 6px;
+  height: 2px;
   background: linear-gradient(75.94deg, #4D165A 5%, #B5507F 62.6%, #DD7F79 89.98%);
   margin: 0;
   border: none;
@@ -29,5 +29,9 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+.header-logoName img {
+  max-width: 250px;
 }
 
