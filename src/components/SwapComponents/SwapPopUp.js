@@ -25,8 +25,8 @@ const SwapPopUp = () => {
       </div>
       <div className="spacing-vertical">
         <div className="flex-between">
-          <div className={classes.text1}>Receive (Estimated)</div>
-          <div className={classes.text2}>Available: 1200</div>
+          <div className="text1">Receive (Estimated)</div>
+          <div className="text2">Available: 1200</div>
         </div>
         <InputField icon={BUSDIcon} name="BUSD" />
       </div>

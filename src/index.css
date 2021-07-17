@@ -5,6 +5,8 @@
   --linear-gradient-opacity: linear-gradient(180deg, rgba(77, 22, 90, 0.1) 0%, rgba(181, 80, 127, 0.1) 67.78%, rgba(221, 127, 121, 0.1) 100%);
   --linear-background: linear-gradient(90deg, #4D165A 0%, #B5507F 67.78%, #DD7F79 100%);
   
+  --buy-color: #0EC9B5;
+  --sell-color: #FF2A57;
   --popup-bg-color: #F8F8F8;
   --popup-text-color: #373583;
   --popup-button-color: #4C4AA1;
@@ -144,4 +146,19 @@ th {
 .linear-background {
   background: var(--linear-background);
   color: #fff;
+}
+.text1 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.432px;
+  color: #8A9AB9;
+}
+.text2 {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.432px;
+  text-decoration-line: underline;
+  color: #16214D;
 }
