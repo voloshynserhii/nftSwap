@@ -6,6 +6,7 @@ import PopUpOverlay from "../PopUpOverlay";
 import BUSDIcon from "../../assets/icons/BUSD.svg";
 import MarketInputField from "./MarketInputField";
 import MarketSelectField from "./MarketSelectField";
+import SmallSelectField from "./SmallSelectField";
 import ICPIcon from "../../assets/wallets/dfinity.svg";
 import classes from "./market-components.module.css";
 
@@ -15,7 +16,7 @@ const MarketPopUp = () => {
       <PopUpHeader title="Buy & Sell" />
       <div className="flex-between full-width">
         <div className="text2">Available: 1000 BUSD</div>
-        <div>Limit</div>
+        <SmallSelectField>Limit</SmallSelectField>
       </div>
       <MarketSelectField
         ammountFrom="49,58"
