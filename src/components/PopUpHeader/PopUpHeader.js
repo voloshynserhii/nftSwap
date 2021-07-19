@@ -5,7 +5,7 @@ import { SettingsButton, WalletButton } from "../UI";
 const PopUpHeader = (props) => {
   return (
     <div className={`flex-between ${props.className}`}>
-      <h1>{props.title}</h1>
+      <h2>{props.title}</h2>
       <div className="flex">
         <WalletButton />
         <SettingsButton />
