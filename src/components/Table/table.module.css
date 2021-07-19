@@ -17,6 +17,7 @@
     font-size: 0.9rem;
     letter-spacing: 0.48px;
     text-align: center;
+    position: relative;
 }
 .tableRow>th:first-child, .tableRow>td:first-child  {
     text-align: start;

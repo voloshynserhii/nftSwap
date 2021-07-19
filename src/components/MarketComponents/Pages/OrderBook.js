@@ -15,7 +15,7 @@ const data = [
     time: "12:05:04",
   },
   {
-    price: 48.996,
+    price: -48.996,
     ammount: 28,
     time: "12:05:04",
   },
@@ -38,9 +38,13 @@ const OrderBookPage = (props) => {
       <Table headers={headers}>
         {data.map((item) => (
           <tr className={tableClasses.tableRow}>
-            <td>{item.price}</td>
+            {item.price > 0 ? (
+              <td style={{ color: "#0EC9B5" }}>{item.price}</td>
+            ) : (
+              <td style={{ color: "#FF2A57" }}>{item.price}</td>
+            )}
             <td>{item.ammount}</td>
-            <td>{item.time}</td>
+            <td style={{ color: "#8A9AB9" }}>{item.time}</td>
           </tr>
         ))}
       </Table>

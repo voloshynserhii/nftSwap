@@ -21,10 +21,10 @@ const data = [
     ammount2: 83.856,
   },
   {
-    ammount1: 64.55,
+    ammount1: 34.55,
     price1: 48.995,
     price2: 48.996,
-    ammount2: 83.856,
+    ammount2: 183.856,
   },
 ];
 
@@ -45,10 +45,36 @@ const OrdersPage = () => {
       <Table headers={headers}>
         {data.map((item) => (
           <tr className={tableClasses.tableRow}>
-            <td style={{color: "#16214D"}}>{item.ammount1}</td>
-            <td style={{color: "#0EC9B5", backgroundColor: "rgba(14, 201, 181, 0.2)"}}>{item.price1}</td>
-            <td style={{color: "#FF2A57", backgroundColor: "rgba(255, 42, 87, 0.16)"}}>{item.price2}</td>
-            <td style={{color: "#16214D"}}>{item.ammount2}</td>
+            <td style={{ color: "#16214D" }}>{item.ammount1}</td>
+            <td style={{ color: "#0EC9B5" }}>
+              <span
+                style={{
+                  position: "absolute",
+                  right: 0,
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  backgroundColor: "rgba(14, 201, 181, 0.2)",
+                  height: "1.3rem",
+                  width: `${item.ammount1}px`
+                }}
+              ></span>
+              {item.price1}
+            </td>
+            <td style={{ color: "#FF2A57" }}>
+              <span
+                style={{
+                  position: "absolute",
+                  left: 0,
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  backgroundColor: "rgba(255, 42, 87, 0.16)",
+                  height: "1.3rem",
+                  width: `${item.ammount2}px`
+                }}
+              ></span>
+              {item.price2}
+            </td>
+            <td style={{ color: "#16214D" }}>{item.ammount2}</td>
           </tr>
         ))}
       </Table>
