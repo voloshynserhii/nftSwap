@@ -8,12 +8,13 @@ import MarketInputField from "./MarketInputField";
 import MarketSelectField from "./MarketSelectField";
 import SmallSelectField from "./SmallSelectField";
 import ICPIcon from "../../assets/wallets/dfinity.svg";
+import Controller from "../../assets/controller.svg";
 import classes from "./market-components.module.css";
 
 const MarketPopUp = () => {
   return (
     <PopUpOverlay>
-      <PopUpHeader title="Buy & Sell" />
+      <PopUpHeader className={classes.header} title="Buy & Sell" />
       <div className="flex-between full-width">
         <div className="text2">Available: 1000 BUSD</div>
         <SmallSelectField>Limit</SmallSelectField>
@@ -25,6 +26,11 @@ const MarketPopUp = () => {
         ammountTo="20,169"
         iconTo={ICPIcon}
         nameTo="ICP"
+      />
+      <img
+        className={`spacing-vertical2 ${classes.controller}`}
+        src={Controller}
+        alt="controller"
       />
       <div className="spacing-vertical">
         <div className="flex-between">

@@ -1,0 +1,16 @@
+.term {
+    background: rgba(138, 154, 185, 0.2);
+    border-radius: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.432px;
+    cursor: pointer;
+}
+.termPassive {
+    color: #8A9AB9;
+}
+.termActive {
+    color: var(--primary-color);
+}

@@ -22,9 +22,9 @@ const Home = () => {
         <TopMoversSlider />
         <NewsSlider />
       </div>
-    {/*
+    
       <CryptocurrencyTable />
-    */}
+   
     </div>
   );
 };

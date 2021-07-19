@@ -5,7 +5,7 @@ import './ui.css';
 
 const WalletButton = props => {
     return (
-        <div className="flex-center square" onClick={props.onOpenWallet}>
+        <div className="flex-center square icon-button" onClick={props.onOpenWallet}>
             <img src={WalletIcon} alt="wallet" />
         </div>
     );

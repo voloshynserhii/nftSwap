@@ -9,21 +9,6 @@
     color: #16214D;
     margin: 1.5rem 0;
 }
-.term {
-    background: rgba(138, 154, 185, 0.2);
-    border-radius: 0.6rem;
-    padding: 0.6rem 1.2rem;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    letter-spacing: 0.432px;
-}
-.termPassive {
-    color: #8A9AB9;
-}
-.termActive {
-    color: var(--primary-color);
-}
 .dynamicPositive {
     font-weight: 600;
     font-size: 1.3rem;

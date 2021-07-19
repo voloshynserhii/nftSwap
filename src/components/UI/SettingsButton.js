@@ -5,7 +5,7 @@ import './ui.css';
 
 const SettingsButton = props => {
     return (
-        <div className="flex-center square" onClick={props.onOpenSettings}>
+        <div className="flex-center square icon-button" onClick={props.onOpenSettings}>
             <img src={SettingIcon} alt="settings" />
         </div>
     );
