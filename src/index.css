@@ -169,3 +169,12 @@ th {
   letter-spacing: 0.576px;
   color: #16214D;
 }
+.align-left {
+  text-align: start;
+}
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: end;
+}
