@@ -4,14 +4,24 @@ import {ChartPage, OrdersPage , OrderBookPage} from "../components/MarketCompone
 import { MarketPopUp, SwitchGroup } from "../components/MarketComponents";
 import classes from "./market.module.css";
 
+import MarketPopout from "../components/MarketComponents/Popout";
+
 const Market = () => {
   const [item, setItem] = useState('');
+  const [popoutOpen, setPopoutOpen] = useState(false);
 
   const onSwitchHandler = (table) => {
     setItem(() => table);
   };
 
+  const openPopoutHandler = () => {
+    setPopoutOpen(true);
+  };
+  
+  {if(popoutOpen) return <MarketPopout />}
+  
   return (
+    <>
     <div className={`pages-overlay flex full-width ${classes.market}`}>
       <div className={classes.marketTableWrapper}>
         <SwitchGroup switchHandler={onSwitchHandler} />
@@ -19,8 +29,9 @@ const Market = () => {
         {item === "graph" && <ChartPage title="BUSD Chart"/>}
         {item === "book" && <OrderBookPage />}
       </div>
-      <MarketPopUp />
+      <MarketPopUp openPopout={openPopoutHandler}/>
     </div>
+    </>
   );
 };
 

@@ -11,12 +11,12 @@ import ICPIcon from "../../assets/wallets/dfinity.svg";
 import Controller from "../../assets/controller.svg";
 import classes from "./market-components.module.css";
 
-const MarketPopUp = () => {
+const MarketPopUp = (props) => {
   return (
     <PopUpOverlay>
       <PopUpHeader className={classes.header} title="Buy & Sell" />
       <div className="flex-between full-width">
-        <div className="text2">Available: 1000 BUSD</div>
+        <div className="text2" onClick={props.openPopout}>Available: 1000 BUSD</div>
         <SmallSelectField>Limit</SmallSelectField>
       </div>
       <MarketSelectField
