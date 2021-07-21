@@ -18,7 +18,7 @@ const Market = () => {
     setPopoutOpen(true);
   };
   
-  {if(popoutOpen) return <MarketPopout />}
+  if(popoutOpen) return <MarketPopout />
   
   return (
     <>

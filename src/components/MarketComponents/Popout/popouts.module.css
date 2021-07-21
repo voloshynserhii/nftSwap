@@ -1,0 +1,6 @@
+.overlay {
+    background: #FFFFFF;
+    border: 1px solid rgba(138, 154, 185, 0.2);
+    border-radius: 1.3rem;
+    width: fit-content;
+}
