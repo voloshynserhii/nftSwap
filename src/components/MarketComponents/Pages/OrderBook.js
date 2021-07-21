@@ -37,7 +37,7 @@ const OrderBookPage = (props) => {
       </TableHeader>
       <Table headers={headers}>
         {data.map((item) => (
-          <tr className={tableClasses.tableRow}>
+          <tr key={item.price} className={tableClasses.tableRow}>
             {item.price > 0 ? (
               <td style={{ color: "#0EC9B5" }}>{item.price}</td>
             ) : (

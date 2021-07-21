@@ -3,4 +3,41 @@
     border: 1px solid rgba(138, 154, 185, 0.2);
     border-radius: 1.3rem;
     width: fit-content;
+    min-width: 40vw;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 2rem 2rem 0 2rem;
+}
+.header::after {
+    content: " ";
+    width: calc(100% + 4rem);
+    height: auto;
+    border: 1px solid rgba(138, 154, 185, 0.2);
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-2rem);
+}
+.header {
+    width: 100%;
+    position: relative;
+    padding-bottom: 2rem;
+}
+.addButton {
+    padding: 1.5rem;
+    width: fit-content;
+}
+.greyText {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+    color: #8A9AB9;
+}
+.bottom {
+    background: var(--linear-gradient-opacity);
+    width: calc(100% + 4rem);
+    transform: translateX(-2rem);
+    height: 150px;
+    margin-top: 2rem;
 }

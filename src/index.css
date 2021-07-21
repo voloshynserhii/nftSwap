@@ -153,6 +153,14 @@ th {
   background: var(--linear-background);
   color: #fff;
 }
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: 1.152px;
+  color: #16214D;
+  margin: 1rem 0;
+}
 .text1 {
   font-weight: 500;
   font-size: 1rem;
