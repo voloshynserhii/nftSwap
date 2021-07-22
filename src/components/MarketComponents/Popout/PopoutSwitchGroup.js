@@ -10,7 +10,7 @@ const PopoutSwitchGroup = (props) => {
 
   if (table === "balance") {
     return (
-      <div className="flex-column full-width">
+      <div className="flex-column full-width overflow">
         <SwitchBlock
           className="full-width fit-height"
         >
