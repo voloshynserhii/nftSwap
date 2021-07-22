@@ -26,7 +26,23 @@ const Balance = () => {
         <InputField>1 Year</InputField>
       </div>
       <img className="full-width" src={Controller} alt="Controller" />
-      <div className={classes.bottom}>Yield 12% . Yield Amount = $38</div>
+      <div className={classes.bottom}>
+        <div className={`flex-between full-height ${classes.bottomWrapper}`}>
+          <div className="input-text">Yield 12% . Yield Amount = $38</div>
+          <div className="flex-between">
+            <PopUpButton
+              className={`button-popup buy-button ${classes.addButton}`}
+            >
+              Transfer
+            </PopUpButton>
+            <PopUpButton
+              className={`button-popup switch-active text-white ${classes.addButton}`}
+            >
+              Stake
+            </PopUpButton>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

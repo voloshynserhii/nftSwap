@@ -6,6 +6,7 @@
     min-width: 40vw;
     box-sizing: border-box;
     padding: 2rem 2rem 0 2rem;
+    margin-bottom: 4rem;
 }
 .header::after {
     content: " ";
@@ -40,4 +41,8 @@
     margin-top: 2rem;
     border-bottom-left-radius: 1.3rem;
     border-bottom-right-radius: 1.3rem;
+}
+.bottomWrapper {
+    padding: 2rem;
+    box-sizing: border-box;
 }

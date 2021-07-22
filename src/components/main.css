@@ -7,7 +7,7 @@ header {
 }
 main {
   display: flex;
-  height: calc(88% - 6px);
+  height: calc(93% - 6px);
   width: 100%;
   background: #F8FAFD;
 }
