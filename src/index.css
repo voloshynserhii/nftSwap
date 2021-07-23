@@ -179,13 +179,6 @@ th {
   text-decoration-line: underline;
   color: #16214D;
 }
-.input-text {
-  font-weight: 600;
-  font-size: 1.3rem;
-  line-height: 1.4rem;
-  letter-spacing: 0.576px;
-  color: #16214D;
-}
 .align-left {
   text-align: start;
 }
@@ -197,4 +190,8 @@ th {
 }
 .overflow {
   overflow-y: scroll;
+}
+.width80 {
+  width: 80%;
+  margin: auto;
 }

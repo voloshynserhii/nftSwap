@@ -28,7 +28,7 @@ const MarketPopUp = (props) => {
         nameTo="ICP"
       />
       <img
-        className={`spacing-vertical2 ${classes.controller}`}
+        className={`spacing-vertical2 full-width ${classes.controller}`}
         src={Controller}
         alt="controller"
       />

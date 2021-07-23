@@ -1,27 +1,29 @@
 import React from "react";
 
-import { PopUpButton, InputField } from "../../UI";
-import Controller from "../../../assets/controller.svg";
+import { PopUpButton } from "../../UI";
 import classes from "./popouts.module.css";
 
 const StakedCoins = () => {
   return (
-    <div className={`full-width ${classes.overlay}`}>
-      <div className={`flex-column ${classes.header}`}>
-        <div className="title">Staked Coins</div>
-        <div className="flex-between full-width">
+    <div className={classes.overlay}>
+      <div className={classes.header}>
+        <div className="title align-center">Staked Coins</div>
+        <div className={`flex-between ${classes.tableHeader}`}>
           <span>Amount</span>
           <span>Rewards</span>
           <span>Rate</span>
           <span>Time Left</span>
         </div>
       </div>
+      <div className={classes.table}>
+        table
+      </div>
       <div className="full-width">
-        <div className="input-text">
+        <div className={`flex-center ${classes.bottomText}`}>
           Please select any one or more neurons to add, sell, claim and return
           coins
         </div>
-        <PopUpButton className={`button-popup switch-active text-white`}>
+        <PopUpButton className={`button-popup linear-background ${classes.manageButton}`}>
           Manage
         </PopUpButton>
       </div>

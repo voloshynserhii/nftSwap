@@ -6,7 +6,7 @@ import classes from "./popouts.module.css";
 
 const Balance = () => {
   return (
-    <div className={`full-width ${classes.overlay}`}>
+    <div className={classes.overlay}>
       <div className={`flex-between ${classes.header}`}>
         <div className="full-width">
           <div className={classes.greyText}>Balance</div>
