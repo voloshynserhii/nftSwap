@@ -1,6 +1,7 @@
 import React from "react";
 
 import { PopUpButton } from "../../UI";
+import Table from "./components/Table";
 import classes from "./popouts.module.css";
 
 const StakedCoins = () => {
@@ -15,9 +16,7 @@ const StakedCoins = () => {
           <span>Time Left</span>
         </div>
       </div>
-      <div className={classes.table}>
-        table
-      </div>
+      <Table />
       <div className="full-width">
         <div className={`flex-center ${classes.bottomText}`}>
           Please select any one or more neurons to add, sell, claim and return
