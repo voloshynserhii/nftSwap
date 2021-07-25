@@ -25,7 +25,7 @@ const PopoutSwitchGroup = (props) => {
   }
   if (table === "stake") {
     return (
-      <div className="flex-column full-width">
+      <div className="flex-column full-width overflow">
         <SwitchBlock
           className="full-width fit-height"
         >

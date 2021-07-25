@@ -47,16 +47,13 @@ const Table = () => {
   return (
     <div className={classes.table}>
       {row.map((item) => (
-        <>
-          <input type="checkbox" name={item.id} />
-          <DataRow
-            key={item.id}
-            amount={item.amount}
-            rewards={item.rewards}
-            rate={item.rate}
-            timeLeft={item.timeLeft}
-          />
-        </>
+        <DataRow
+          key={item.id}
+          amount={item.amount}
+          rewards={item.rewards}
+          rate={item.rate}
+          timeLeft={item.timeLeft}
+        />
       ))}
     </div>
   );

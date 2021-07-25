@@ -1,4 +1,38 @@
 .table {
-    width: 80%;
+    width: 83%;
     margin: 0 auto;
+    margin-left: 5%;
+    margin-bottom: 1.5rem;
+}
+.row {
+    padding: 0.7rem 0;
+    border-bottom: 1px solid rgba(138, 154, 185, 0.2);
+}
+input[type="checkbox"] {
+    position: relative;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #8A9AB9;
+    outline: none;
+    border-radius:30px;
+    transition: 0.3s;
+    margin: 0.5rem 1.5rem 0.5rem 0;
+}
+input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+input[type="checkbox"]:checked:before {
+    background: var(--linear-gradient);
+}
+input[type="checkbox"]:checked {
+    border: 2px solid var(--primary-color);
 }
