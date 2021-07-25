@@ -65,7 +65,9 @@
     margin-bottom: -1rem;
     margin-top: 2rem;
 }
-.table {
-    width: 90%;
-    margin: 0 auto;
+.inputs {
+    background: rgba(138, 154, 185, 0.0980392);
+    border: 1px solid rgba(138, 154, 185, 0.2);
+    padding: 0.7rem 1.3rem;
+    margin-top: 2rem;
 }

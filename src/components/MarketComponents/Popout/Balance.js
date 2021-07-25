@@ -18,12 +18,12 @@ const Balance = () => {
       </div>
       <div className="flex-between">
         <h4>Select Amount</h4>
-        <InputField>$30</InputField>
+        <InputField className={classes.inputs}>$30</InputField>
       </div>
       <img className="full-width" src={Controller} alt="Controller" />
       <div className="flex-between">
         <h4>Select Time</h4>
-        <InputField>1 Year</InputField>
+        <InputField className={classes.inputs}>1 Year</InputField>
       </div>
       <img className="full-width" src={Controller} alt="Controller" />
       <div className={classes.bottom}>
