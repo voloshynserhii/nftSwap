@@ -11,7 +11,7 @@ const DataRow = (props) => {
       </div>
       <span>{props.rewards}</span>
       <span>{props.rate}</span>
-      <span>{props.timeLeft}</span>
+      <span>{props.timeLeft} years</span>
     </div>
   );
 };
