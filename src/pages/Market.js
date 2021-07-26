@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import {ChartPage, OrdersPage , OrderBookPage} from "../components/MarketComponents/Pages";
+import {ArchivePage, ChartPage, OrdersPage , OrderBookPage} from "../components/MarketComponents/Pages";
 import { MarketPopUp, SwitchGroup } from "../components/MarketComponents";
 import classes from "./market.module.css";
 
@@ -28,6 +28,7 @@ const Market = () => {
         {item === "orders" && <OrdersPage />}
         {item === "graph" && <ChartPage title="BUSD Chart"/>}
         {item === "book" && <OrderBookPage />}
+        {item === "archive" && <ArchivePage />}
       </div>
       <MarketPopUp openPopout={openPopoutHandler}/>
     </div>

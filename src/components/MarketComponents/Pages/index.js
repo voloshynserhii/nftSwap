@@ -1,5 +1,6 @@
+import ArchivePage from "./Archive";
 import ChartPage from "./Chart";
 import OrdersPage from "./Orders";
 import OrderBookPage from "./OrderBook";
 
-export {ChartPage, OrdersPage, OrderBookPage};
+export {ArchivePage, ChartPage, OrdersPage, OrderBookPage};
