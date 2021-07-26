@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { PopUpButton, InputField } from "../../UI";
+import SuccessPopUp from "../../popups/Success";
 import Controller from "../../../assets/controller.svg";
 import classes from "./popouts.module.css";
 
 const Balance = () => {
+  const [success, setSuccess] = useState(false);
+
+  const showSuccessHandler = () => {
+    setSuccess(true);
+  };
+  const closeSuccessHandler = () => {
+    setSuccess(false);
+  };
+  if (success) return <SuccessPopUp onClose={closeSuccessHandler}/>;
+
   return (
     <div className={classes.overlay}>
       <div className={`flex-between ${classes.header}`}>
@@ -12,7 +23,10 @@ const Balance = () => {
           <div className={classes.greyText}>Balance</div>
           <div className="title">450 ICP</div>
         </div>
-        <PopUpButton className={`button-popup buy-button ${classes.addButton}`}>
+        <PopUpButton
+          className={`button-popup buy-button ${classes.addButton}`}
+          onClick={showSuccessHandler}
+        >
           Add Balance
         </PopUpButton>
       </div>

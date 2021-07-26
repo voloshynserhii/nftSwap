@@ -73,6 +73,9 @@ th {
 .text-white {
   color: #FFFFFF;
 }
+.text-gray {
+  color: #8A9AB9;
+}
 .flex {
   display: flex;
 }
