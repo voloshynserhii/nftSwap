@@ -1,0 +1,9 @@
+type Token = text;
+type Symbol = text;
+service : {
+  createDefaultCurrencies: () -> (text);
+  get: (Symbol) -> (Token) query;
+  makeCurrency: (nat, text, Symbol) -> (text);
+  makePerson: (text) -> (text);
+  put: (Symbol, Token) -> ();
+}
