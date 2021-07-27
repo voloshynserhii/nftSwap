@@ -5,6 +5,7 @@ import TableHeader from "../../TableHeader";
 import TermsSwitcher from "../../TermsSwitcher";
 import USDCIcon from "../../../assets/icons/dollar.svg";
 import BUSDIcon from "../../../assets/icons/BUSD.svg";
+import CloseIcon from "../../../assets/icons/close-icon.svg";
 import tableClasses from "../../Table/table.module.css";
 
 const headers = ["Price (BUSD)", "Amount (ICP)", "Time", "Cancel"];
@@ -45,7 +46,9 @@ const ArchivePage = (props) => {
             )}
             <td>{item.ammount}</td>
             <td style={{ color: "#8A9AB9" }}>{item.time}</td>
-            <td>X</td>
+            <td style={{ cursor: "pointer" }}>
+              <img src={CloseIcon} alt="close" />
+            </td>
           </tr>
         ))}
       </Table>
