@@ -9,6 +9,7 @@ import MetaMaskLogo from "./MetaMaskLogo";
 import Notification from "./Notification";
 import PopUpButton from "./PopUpButton";
 import SettingsButton from "./SettingsButton";
+import SelectInput from "./SelectInput";
 import StartButton from "./StartButton";
 import SwitchMode from "./SwitchMode";
 import SwitchBlock from "./SwitchBlock";
@@ -26,6 +27,7 @@ export {
   MetaMaskLogo,
   Notification,
   PopUpButton,
+  SelectInput,
   SettingsButton,
   StartButton,
   SwitchMode,

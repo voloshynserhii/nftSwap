@@ -10,7 +10,7 @@ import "./popups.css";
 const SuccessPopUp = (props) => {
   return (
     <div className={props.className}>
-      <PopUp className="success-popup" onClose={props.onClose}>
+      <PopUp className="center-popup success-popup" onClose={props.onClose}>
         <img
           className="full-width full-height success-bg"
           src={SuccessBg}
@@ -25,8 +25,8 @@ const SuccessPopUp = (props) => {
           <img src={CloseIcon} alt="close" />
         </span>
         <div className="full-width align-center">
-          <h2>Successfully Bought ICP</h2>
-          <div className="text-gray spacing-vertical2">90,000,000 ICPX sent to your address.</div>
+          <h2>{props.title}</h2>
+          <div className="text-gray spacing-vertical2">{props.text || props.children}</div>
           <PopUpButton className="button-popup linear-background">
             View Transaction
           </PopUpButton>

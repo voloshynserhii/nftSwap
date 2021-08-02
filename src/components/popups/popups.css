@@ -1,56 +1,63 @@
 .header-popup {
-    position: absolute;
-    top: 9vh;
-    right: 12vw;
+  position: absolute;
+  top: 9vh;
+  right: 12vw;
 }
 .popup-header {
-    font-size: 1rem;
-    margin: 10px 0 20px 0;
+  font-size: 1rem;
+  margin: 10px 0 20px 0;
 }
 .popup-header span {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 .popup-header img {
-    height: 1em;
+  height: 1em;
 }
 .popup-form {
-    margin: 20% 0 5% 0;
+  margin: 20% 0 5% 0;
 }
 .start-layer {
-    padding: 20% 0;
+  padding: 20% 0;
 }
 .start-layer h4 {
-    margin: 15% 0 20% 0;
+  margin: 15% 0 20% 0;
 }
 .signin-layer {
-    padding: 20% 5% 5% 5%;
+  padding: 20% 5% 5% 5%;
 }
 .signin-layer h4 {
-    margin: 15% 0 5px 0;
+  margin: 15% 0 5px 0;
 }
 .signin-layer p {
-    color: rgba(76, 74, 161, .7);
+  color: rgba(76, 74, 161, 0.7);
 }
 .close-btn {
-    position: absolute;
-    right: 7%;
-    top: 5%;
+  position: absolute;
+  right: 7%;
+  top: 5%;
 }
 .success-bg {
-    position: absolute;
-    top: -10%;
-    left: 0;
-    right: 0;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  right: 0;
 }
 .success {
-    width: 45%;
-    margin: 20% 0 10% 0;
+  width: 45%;
+  margin: 20% 0 10% 0;
+}
+.center-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .success-popup {
-    /* position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%); */
-    min-width: 35vw;
-    margin-bottom: 20%;
+  min-width: 35vw;
+  margin-bottom: 20%;
+  overflow: hidden;
+}
+.stake-popup {
+  min-width: 25vw;
+  padding: 30px;
 }
