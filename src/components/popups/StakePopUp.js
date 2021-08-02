@@ -11,7 +11,7 @@ const StakePopUp = (props) => {
     <div className={props.className}>
       <PopUp className="stake-popup center-popup" onClose={props.onClose}>
         <div className="full-width">
-          <PopUpHeader title="Swap" />
+          <PopUpHeader title="Unstake"/>
           <div className="spacing-vertical">
             <div className="flex">
               <div className="text1">Pay</div>
@@ -30,7 +30,7 @@ const StakePopUp = (props) => {
           <div className="flex-center">
             <div className="text1">1 USDC = 1.0005 USDC</div>
           </div>
-          <ConfirmButton className="full-width gray-background spacing-vertical">
+          <ConfirmButton className="full-width gray-background spacing-vertical" onConfirm={props.onConfirm}>
             Confirm Order
           </ConfirmButton>
           <div className="flex-center">

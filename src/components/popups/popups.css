@@ -51,13 +51,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-width: 35vw;
 }
 .success-popup {
-  min-width: 35vw;
   margin-bottom: 20%;
   overflow: hidden;
 }
 .stake-popup {
-  min-width: 25vw;
   padding: 30px;
+}
+.qr {
+  width: 30%;
 }

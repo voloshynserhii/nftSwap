@@ -15,29 +15,39 @@ import classes from "./market-components.module.css";
 const MarketPopUp = (props) => {
   const [buy, setBuy] = useState(false);
   const [sell, setSell] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const showBuyHandler = () => {
     setBuy(true);
   };
-  const closeBuyHandler = () => {
+  const closeHandler = () => {
     setBuy(false);
+    setSell(false);
+    setSuccess(false);
   };
 
   const showSellHandler = () => {
     setSell(true);
   };
-  const closeSellHandler = () => {
+  
+  const successHandler = () => {
     setSell(false);
-  };
+    setSuccess(true);
+  }
 
   return (
     <>
       {buy && (
-        <Success title="Order Created" onClose={closeBuyHandler}>
+        <Success title="Order Created" onClose={closeHandler}>
           Exchanging 300 BUSD for 320.16 USDC
         </Success>
       )}
-      {sell && <StakePopUp onClose={closeSellHandler} />}
+      {sell && <StakePopUp onClose={closeHandler} onConfirm={successHandler}/>}
+      {success && (
+        <Success title="Neuron Successfull Topped Up" onClose={closeHandler}>
+          90,000,000 ICPX sent to your address.
+        </Success>
+      )}
       <PopUpOverlay>
         <PopUpHeader className={classes.header} title="Buy & Sell" />
         <div className="flex-between full-width">
