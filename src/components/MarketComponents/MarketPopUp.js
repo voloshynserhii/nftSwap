@@ -42,7 +42,7 @@ const MarketPopUp = (props) => {
           Exchanging 300 BUSD for 320.16 USDC
         </Success>
       )}
-      {sell && <StakePopUp onClose={closeHandler} onConfirm={successHandler}/>}
+      {sell && <StakePopUp title="Unstake" onClose={closeHandler} onConfirm={successHandler}/>}
       {success && (
         <Success title="Neuron Successfull Topped Up" onClose={closeHandler}>
           90,000,000 ICPX sent to your address.

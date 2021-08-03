@@ -1,31 +1,51 @@
 import React, { useState } from "react";
 
 import { PopUpButton, InputField } from "../../UI";
-import { AddBalance } from "../../popups";
+import { AddBalance, Success, WithdrawPopUp } from "../../popups";
 import Controller from "../../../assets/controller.svg";
 import classes from "./popouts.module.css";
 
 const Balance = () => {
   const [showBalance, setShowBalance] = useState(false);
+  const [showTransfer, setShowTransfer] = useState(false);
+  const [success, setSuccess] = useState(false);
 
   const showBalanceHandler = () => {
     setShowBalance(true);
   };
-  const closeBalanceHandler = () => {
+  const closeHandler = () => {
     setShowBalance(false);
+    setShowTransfer(false);
+    setSuccess(false);
   };
-  
+
   const transferHandler = () => {
-    setShowBalance(true);
+    setShowTransfer(true);
   };
-  
+
   const stakeHandler = () => {
     setShowBalance(true);
   };
 
+  const successHandler = () => {
+    setSuccess(true);
+  };
+
   return (
     <>
-      {showBalance && <AddBalance title="Add Balance" onClose={closeBalanceHandler} />}
+      {showBalance && <AddBalance title="Add Balance" onClose={closeHandler} />}
+      {showTransfer && (
+        <WithdrawPopUp
+          title="Withdraw"
+          onConfirm={successHandler}
+          onClose={closeHandler}
+        />
+      )}
+      {success && (
+        <Success title="100 Withdrawn Succesfully" onClose={closeHandler}>
+          90,000,000 ICPX sent to your address.
+        </Success>
+      )}
       <div className={classes.overlay}>
         <div className={`flex-between ${classes.header}`}>
           <div className="full-width">

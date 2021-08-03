@@ -11,7 +11,7 @@ const StakePopUp = (props) => {
     <div className={props.className}>
       <PopUp className="stake-popup center-popup" onClose={props.onClose}>
         <div className="full-width">
-          <PopUpHeader title="Unstake"/>
+          <PopUpHeader title={props.title}/>
           <div className="spacing-vertical">
             <div className="flex">
               <div className="text1">Pay</div>

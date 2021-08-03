@@ -63,3 +63,7 @@
 .qr {
   width: 30%;
 }
+.input-code {
+  max-width: 60%;
+  overflow: hidden;
+}

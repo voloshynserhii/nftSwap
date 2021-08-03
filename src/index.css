@@ -143,6 +143,9 @@ th {
 .spacing-vertical2 {
   margin: 2rem 0;
 }
+.spacing-horizontal {
+  margin: 0 1rem;
+}
 .horizontal-line {
   width: 120%;
   height: auto;
